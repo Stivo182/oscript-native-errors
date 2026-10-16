@@ -1001,6 +1001,16 @@
 	);
 	Правила.Добавить(
 		Новый ПравилоКлассификацииОшибок()
+			.СНативнымТипом("System.ArgumentOutOfRangeException")
+			.Содержит("Decimal can only round to between 0 and 28 digits of precision.")
+			.СИдентификатором("argument.invalid_value.round_digits")
+			.КлассифицируетКак(
+				КодыНативныхОшибок.НедопустимоеЗначениеАргумента(),
+				"ru = 'Недопустимое значение аргумента'; en = 'Invalid argument value'"
+			)
+	);
+	Правила.Добавить(
+		Новый ПравилоКлассификацииОшибок()
 			.СНативнымТипом("System.FormatException")
 			.Содержит("The input string '")
 			.ОканчиваетсяНа("' was not in a correct format.")
