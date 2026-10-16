@@ -1206,10 +1206,19 @@
 	Правила.Добавить(
 		Новый ПравилоКлассификацииОшибок()
 			.СНативнымТипом("System.ArgumentOutOfRangeException")
-			.ОканчиваетсяНа(
-				"The added or subtracted value results in an un-representable DateTime. (Parameter 'months')"
+			.Содержит("The added or subtracted value results in an un-representable DateTime.")
+			.СИдентификатором("date.out_of_range.add")
+			.КлассифицируетКак(
+				КодыНативныхОшибок.ДатаВнеДиапазона(),
+				"ru = 'Сдвиг даты выводит ее за поддерживаемый диапазон'; "
+				+ "en = 'Date shift results in an un-representable DateTime'"
 			)
-			.СИдентификатором("date.out_of_range.add_month")
+	);
+	Правила.Добавить(
+		Новый ПравилоКлассификацииОшибок()
+			.СНативнымТипом("System.ArgumentOutOfRangeException")
+			.НачинаетсяС("The UTC time represented when the offset is applied must be between year 0 and 10,000")
+			.СИдентификатором("date.out_of_range.time_zone_offset")
 			.КлассифицируетКак(
 				КодыНативныхОшибок.ДатаВнеДиапазона(),
 				"ru = 'Сдвиг даты выводит ее за поддерживаемый диапазон'; "
