@@ -1089,6 +1089,16 @@
 	);
 	Правила.Добавить(
 		Новый ПравилоКлассификацииОшибок()
+			.СНативнымТипом("System.ArgumentException")
+			.СовпадаетС("The value cannot be an empty string. (Parameter 'variable')")
+			.СИдентификатором("environment.empty_variable_name")
+			.КлассифицируетКак(
+				КодыНативныхОшибок.ПустоеИмяПеременнойСреды(),
+				"ru = 'Указано пустое имя переменной среды'; en = 'Empty environment variable name specified'"
+			)
+	);
+	Правила.Добавить(
+		Новый ПравилоКлассификацииОшибок()
 			.СНативнымТипом("System.ArgumentOutOfRangeException")
 			.Содержит("Decimal can only round to between 0 and 28 digits of precision.")
 			.СИдентификатором("argument.invalid_value.round_digits")
