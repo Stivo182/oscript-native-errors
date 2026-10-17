@@ -483,8 +483,20 @@
 	Правила.Добавить(
 		Новый ПравилоКлассификацииОшибок()
 			.СНативнымТипом("System.InvalidOperationException")
-			.ОканчиваетсяНа("Token EndAttribute in state Start would result in an invalid XML document.")
+			.НачинаетсяС("Token EndAttribute in state ")
+			.ОканчиваетсяНа(" would result in an invalid XML document.")
 			.СИдентификатором("xml.invalid_write_state.end_attribute")
+			.КлассифицируетКак(
+				КодыНативныхОшибок.XMLНекорректноеСостояниеЗаписи(),
+				СообщениеСостоянияЗаписи
+			)
+	);
+	Правила.Добавить(
+		Новый ПравилоКлассификацииОшибок()
+			.СНативнымТипом("System.InvalidOperationException")
+			.НачинаетсяС("Token StartAttribute in state ")
+			.ОканчиваетсяНа(" would result in an invalid XML document.")
+			.СИдентификатором("xml.invalid_write_state.start_attribute")
 			.КлассифицируетКак(
 				КодыНативныхОшибок.XMLНекорректноеСостояниеЗаписи(),
 				СообщениеСостоянияЗаписи
@@ -505,6 +517,82 @@
 			.СНативнымТипом("System.ArgumentException")
 			.ОканчиваетсяНа("Cannot have ']]>' inside an XML CDATA block.")
 			.СИдентификатором("xml.invalid_syntax.cdata")
+			.КлассифицируетКак(
+				КодыНативныхОшибок.XMLНекорректныйСинтаксис(),
+				СообщениеСинтаксиса
+			)
+	);
+	Правила.Добавить(
+		Новый ПравилоКлассификацииОшибок()
+			.СНативнымТипом("System.ArgumentException")
+			.ОканчиваетсяНа("Cannot have '?>' inside an XML processing instruction.")
+			.СИдентификатором("xml.invalid_syntax.processing_instruction")
+			.КлассифицируетКак(
+				КодыНативныхОшибок.XMLНекорректныйСинтаксис(),
+				СообщениеСинтаксиса
+			)
+	);
+	Правила.Добавить(
+		Новый ПравилоКлассификацииОшибок()
+			.СНативнымТипом("System.ArgumentException")
+			.НачинаетсяС("Invalid name character in '")
+			.ОканчиваетсяНа("'.")
+			.СИдентификатором("xml.invalid_syntax.name")
+			.КлассифицируетКак(
+				КодыНативныхОшибок.XMLНекорректныйСинтаксис(),
+				СообщениеСинтаксиса
+			)
+	);
+	Правила.Добавить(
+		Новый ПравилоКлассификацииОшибок()
+			.СНативнымТипом("System.ArgumentException")
+			.СовпадаетС(
+				"Prefixes beginning with ""xml"" (regardless of whether the characters are uppercase, lowercase, "
+					+ "or some combination thereof) are reserved for use by XML."
+			)
+			.СИдентификатором("xml.invalid_syntax.reserved_prefix")
+			.КлассифицируетКак(
+				КодыНативныхОшибок.XMLНекорректныйСинтаксис(),
+				СообщениеСинтаксиса
+			)
+	);
+	Правила.Добавить(
+		Новый ПравилоКлассификацииОшибок()
+			.СНативнымТипом("System.ArgumentException")
+			.СовпадаетС("Cannot bind to the reserved namespace.")
+			.СИдентификатором("xml.invalid_syntax.reserved_namespace")
+			.КлассифицируетКак(
+				КодыНативныхОшибок.XMLНекорректныйСинтаксис(),
+				СообщениеСинтаксиса
+			)
+	);
+	Правила.Добавить(
+		Новый ПравилоКлассификацииОшибок()
+			.СНативнымТипом("System.ArgumentException")
+			.НачинаетсяС("The surrogate pair (0x")
+			.ОканчиваетсяНа("must always be paired with a low surrogate character (0xDC00 - 0xDFFF).")
+			.СИдентификатором("xml.invalid_syntax.surrogate_pair")
+			.КлассифицируетКак(
+				КодыНативныхОшибок.XMLНекорректныйСинтаксис(),
+				СообщениеСинтаксиса
+			)
+	);
+	Правила.Добавить(
+		Новый ПравилоКлассификацииОшибок()
+			.СНативнымТипом("System.ArgumentException")
+			.СовпадаетС("The surrogate pair is invalid. Missing a low surrogate character.")
+			.СИдентификатором("xml.invalid_syntax.surrogate_pair.missing_low")
+			.КлассифицируетКак(
+				КодыНативныхОшибок.XMLНекорректныйСинтаксис(),
+				СообщениеСинтаксиса
+			)
+	);
+	Правила.Добавить(
+		Новый ПравилоКлассификацииОшибок()
+			.СНативнымТипом("System.ArgumentException")
+			.НачинаетсяС("Invalid high surrogate character (0x")
+			.ОканчиваетсяНа("A high surrogate character must have a value from range (0xD800 - 0xDBFF).")
+			.СИдентификатором("xml.invalid_syntax.surrogate_pair.invalid_high")
 			.КлассифицируетКак(
 				КодыНативныхОшибок.XMLНекорректныйСинтаксис(),
 				СообщениеСинтаксиса
