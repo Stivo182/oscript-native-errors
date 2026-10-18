@@ -237,6 +237,26 @@
 	);
 	Правила.Добавить(
 		Новый ПравилоКлассификацииОшибок()
+			.СНативнымТипом("System.ArgumentException")
+			.ОканчиваетсяНа("Stream was not writable.")
+			.СИдентификатором("stream.not_writable.dotnet_stream")
+			.КлассифицируетКак(
+				КодыНативныхОшибок.ПотокНеПоддерживаетЗапись(),
+				"ru = 'Поток не поддерживает запись'; en = 'Stream does not support writing'"
+			)
+	);
+	Правила.Добавить(
+		Новый ПравилоКлассификацииОшибок()
+			.СНативнымТипом("System.NotSupportedException")
+			.ОканчиваетсяНа("Stream does not support writing.")
+			.СИдентификатором("stream.not_writable.dotnet_not_supported")
+			.КлассифицируетКак(
+				КодыНативныхОшибок.ПотокНеПоддерживаетЗапись(),
+				"ru = 'Поток не поддерживает запись'; en = 'Stream does not support writing'"
+			)
+	);
+	Правила.Добавить(
+		Новый ПравилоКлассификацииОшибок()
 			.СовпадаетС("ru = 'Ошибка обращения к закрытому потоку'; en = 'Cannot access a closed stream'")
 			.СИдентификатором("stream.closed.onescript")
 			.КлассифицируетКак(
@@ -341,6 +361,16 @@
 			.КлассифицируетКак(
 				КодыНативныхОшибок.JSONНекорректныйСинтаксис(),
 				"ru = 'Некорректные данные JSON'; en = 'Invalid JSON data'"
+			)
+	);
+	Правила.Добавить(
+		Новый ПравилоКлассификацииОшибок()
+			.СНативнымТипом("Newtonsoft.Json.JsonException")
+			.ОканчиваетсяНа("Path ended with open indexer.")
+			.СИдентификатором("json.invalid_path.open_indexer")
+			.КлассифицируетКак(
+				КодыНативныхОшибок.JSONНекорректныйПуть(),
+				"ru = 'Некорректное выражение JSONPath'; en = 'Invalid JSONPath expression'"
 			)
 	);
 	Правила.Добавить(
@@ -747,7 +777,6 @@
 				"ru = 'Неизвестная кодировка текста'; en = 'Unknown text encoding'"
 			)
 	);
-
 КонецПроцедуры
 
 Процедура ДобавитьПравилаСтроковыхОпераций(Правила)
@@ -864,6 +893,20 @@
 				"ru = 'Операция выходит за границы двоичного буфера'; en = 'Operation exceeds binary buffer bounds'"
 			)
 	);
+	Правила.Добавить(
+		Новый ПравилоКлассификацииОшибок()
+			.СНативнымТипом("System.ArgumentException")
+			.Содержит(
+				"ru = 'Массив, начиная с указанного индекса, недостаточно длинный для чтения значения указанного типа.';"
+				+ "en = 'The array starting from the specified index is not long enough to read a value "
+				+ "of the specified type.'"
+			)
+			.СИдентификатором("binary.buffer_range.value_type")
+			.КлассифицируетКак(
+				КодыНативныхОшибок.ДвоичныеДанныеВыходЗаГраницыБуфера(),
+				"ru = 'Операция выходит за границы двоичного буфера'; en = 'Operation exceeds binary buffer bounds'"
+			)
+	);
 
 КонецПроцедуры
 
@@ -892,6 +935,16 @@
 		Новый ПравилоКлассификацииОшибок()
 			.СНативнымТипом("System.OverflowException")
 			.СИдентификатором("number.overflow")
+			.КлассифицируетКак(
+				КодыНативныхОшибок.ПереполнениеЧисловогоЗначения(),
+				"ru = 'Переполнение числового значения'; en = 'Numeric overflow'"
+			)
+	);
+	Правила.Добавить(
+		Новый ПравилоКлассификацииОшибок()
+			.СНативнымТипом("System.InvalidCastException")
+			.ОканчиваетсяНа("Unable to cast object of type 'System.Numerics.BigInteger' to type 'System.IConvertible'.")
+			.СИдентификатором("number.overflow.json_big_integer")
 			.КлассифицируетКак(
 				КодыНативныхОшибок.ПереполнениеЧисловогоЗначения(),
 				"ru = 'Переполнение числового значения'; en = 'Numeric overflow'"
