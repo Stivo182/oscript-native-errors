@@ -3,5 +3,13 @@ out/
 /oscript_modules/
 *.ospx
 
+# .NET
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+*.deps.json
+*.pdb
+
 # VS Code
 .vscode/
