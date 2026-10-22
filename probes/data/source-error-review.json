@@ -46,7 +46,7 @@
                          "ExceptionType":  "BindingException",
                          "Statement":  "throw new BindingException(SelectMessage(symbol, symbol.Alias));",
                          "Status":  "Covered",
-                         "Code":  "script.compilation_failed",
+                         "Code":  "script.compilation.failed",
                          "Note":  "Ошибка связывания символов входит в ошибку компиляции сценария."
                      },
                      {
@@ -54,7 +54,7 @@
                          "ExceptionType":  "BindingException",
                          "Statement":  "throw new BindingException(SelectMessage(symbol, symbol.Name));",
                          "Status":  "Covered",
-                         "Code":  "script.compilation_failed",
+                         "Code":  "script.compilation.failed",
                          "Note":  "Ошибка связывания символов входит в ошибку компиляции сценария."
                      },
                      {
@@ -70,7 +70,7 @@
                          "ExceptionType":  "SyntaxErrorException",
                          "Statement":  "throw;",
                          "Status":  "Covered",
-                         "Code":  "script.compilation_failed",
+                         "Code":  "script.compilation.failed",
                          "Note":  "Повторно выбрасывает синтаксическую ошибку, покрытую оберткой компиляции сценария."
                      },
                      {
@@ -358,7 +358,7 @@
                          "ExceptionType":  "BslExceptions.ConvertToBooleanException",
                          "Statement":  "throw BslExceptions.ConvertToBooleanException();",
                          "Status":  "Covered",
-                         "Code":  "type.conversion_failed",
+                         "Code":  "type.conversion.failed",
                          "Note":  "Покрыто матричным тестом преобразования строки в булево."
                      },
                      {
@@ -366,7 +366,7 @@
                          "ExceptionType":  "BslExceptions.ConvertToDateException",
                          "Statement":  "throw BslExceptions.ConvertToDateException();",
                          "Status":  "Covered",
-                         "Code":  "type.conversion_failed",
+                         "Code":  "type.conversion.failed",
                          "Note":  "Покрыто матричным тестом преобразования строки в дату."
                      },
                      {
@@ -374,7 +374,7 @@
                          "ExceptionType":  "BslExceptions.ConvertToNumberException",
                          "Statement":  "throw BslExceptions.ConvertToNumberException();",
                          "Status":  "Covered",
-                         "Code":  "type.conversion_failed",
+                         "Code":  "type.conversion.failed",
                          "Note":  "Покрыто матричным тестом преобразования строки в число."
                      },
                      {
@@ -414,7 +414,7 @@
                          "ExceptionType":  "Rethrow",
                          "Statement":  "_ =\u003e throw BslExceptions.ConvertToBooleanException() };",
                          "Status":  "Covered",
-                         "Code":  "type.conversion_failed",
+                         "Code":  "type.conversion.failed",
                          "Note":  "Покрыто матричным тестом преобразования строки в булево."
                      },
                      {
@@ -422,7 +422,7 @@
                          "ExceptionType":  "Rethrow",
                          "Statement":  "_ =\u003e throw BslExceptions.ConvertToDateException() };",
                          "Status":  "Covered",
-                         "Code":  "type.conversion_failed",
+                         "Code":  "type.conversion.failed",
                          "Note":  "Покрыто матричным тестом преобразования строки в дату."
                      },
                      {
@@ -430,7 +430,7 @@
                          "ExceptionType":  "Rethrow",
                          "Statement":  "_ =\u003e throw BslExceptions.ConvertToNumberException() };",
                          "Status":  "Covered",
-                         "Code":  "type.conversion_failed",
+                         "Code":  "type.conversion.failed",
                          "Note":  "Покрыто матричным тестом преобразования строки в число."
                      },
                      {
@@ -438,7 +438,7 @@
                          "ExceptionType":  "Rethrow",
                          "Statement":  "_ =\u003e throw BslExceptions.ConvertToNumberException(target) };",
                          "Status":  "Covered",
-                         "Code":  "type.conversion_failed",
+                         "Code":  "type.conversion.failed",
                          "Note":  "Покрыто матричным тестом преобразования строки в число."
                      },
                      {
@@ -470,7 +470,7 @@
                          "ExceptionType":  "PropertyAccessException.PropIsNotWritableException",
                          "Statement":  "throw PropertyAccessException.PropIsNotWritableException(PropertyName());",
                          "Status":  "Covered",
-                         "Code":  "object.property_not_writable",
+                         "Code":  "object.property.not_writable",
                          "Note":  "Покрыто матричным тестом записи в недоступное свойство объекта."
                      },
                      {
@@ -478,7 +478,7 @@
                          "ExceptionType":  "NativeCompilerException.OperationNotDefined",
                          "Statement":  "throw NativeCompilerException.OperationNotDefined(_opCode, left.Type, right.Type);",
                          "Status":  "Covered",
-                         "Code":  "script.compilation_failed",
+                         "Code":  "script.compilation.failed",
                          "Note":  "Ошибка доступна через обертку компиляции загружаемого сценария и покрыта ее матричным тестом."
                      },
                      {
@@ -494,7 +494,7 @@
                          "ExceptionType":  "NativeCompilerException.OperationNotDefined",
                          "Statement":  "throw NativeCompilerException.OperationNotDefined(opCode, left.Type, right.Type);",
                          "Status":  "Covered",
-                         "Code":  "script.compilation_failed",
+                         "Code":  "script.compilation.failed",
                          "Note":  "Ошибка доступна через обертку компиляции загружаемого сценария и покрыта ее матричным тестом."
                      },
                      {
@@ -502,7 +502,7 @@
                          "ExceptionType":  "Rethrow",
                          "Statement":  "_ =\u003e throw NativeCompilerException.OperationNotDefined(opCode, left.Type, right.Type) };",
                          "Status":  "Covered",
-                         "Code":  "script.compilation_failed",
+                         "Code":  "script.compilation.failed",
                          "Note":  "Ошибка доступна через обертку компиляции загружаемого сценария и покрыта ее матричным тестом."
                      },
                      {
@@ -518,7 +518,7 @@
                          "ExceptionType":  "NativeCompilerException",
                          "Statement":  "throw new NativeCompilerException( BilingualString.Localize( $\"Преобразование {right.Type} в тип {type} недоступно\", $\"Conversion from {right.Type} to {type} is unavailable\") );",
                          "Status":  "Covered",
-                         "Code":  "script.compilation_failed",
+                         "Code":  "script.compilation.failed",
                          "Note":  "Преобразуется внешней оберткой компиляции сценария и покрыто ее матричным тестом."
                      },
                      {
@@ -526,7 +526,7 @@
                          "ExceptionType":  "NativeCompilerException",
                          "Statement":  "throw new NativeCompilerException( BilingualString.Localize( $\"Преобразование {value.Type} в тип {targetType} недоступно\", $\"Conversion from {value.Type} to {targetType} is unavailable\") );",
                          "Status":  "Covered",
-                         "Code":  "script.compilation_failed",
+                         "Code":  "script.compilation.failed",
                          "Note":  "Преобразуется внешней оберткой компиляции сценария и покрыто ее матричным тестом."
                      },
                      {
@@ -534,7 +534,7 @@
                          "ExceptionType":  "NativeCompilerException",
                          "Statement":  "throw new NativeCompilerException(BilingualString.Localize( $\"Преобразование из типа {source.Type} в тип {targetType} не поддерживается\", $\"Conversion from type {source.Type} into {targetType} is not supported\"));",
                          "Status":  "Covered",
-                         "Code":  "script.compilation_failed",
+                         "Code":  "script.compilation.failed",
                          "Note":  "Преобразуется внешней оберткой компиляции сценария и покрыто ее матричным тестом."
                      },
                      {
@@ -542,7 +542,7 @@
                          "ExceptionType":  "NativeCompilerException",
                          "Statement":  "throw new NativeCompilerException(BilingualString.Localize( $\"Преобразование из типа {value.Type} в тип BslValue не поддерживается\", $\"Conversion from type {value.Type} into BslValue is not supported\"));",
                          "Status":  "Covered",
-                         "Code":  "script.compilation_failed",
+                         "Code":  "script.compilation.failed",
                          "Note":  "Преобразуется внешней оберткой компиляции сценария и покрыто ее матричным тестом."
                      },
                      {
@@ -598,7 +598,7 @@
                          "ExceptionType":  "NativeCompilerException",
                          "Statement":  "throw new NativeCompilerException(BilingualString.Localize( $\"Метод {name} не определен для типа {targetType}\", $\"Method {name} is not defined for type {targetType}\"), ToCodePosition(node.Location));",
                          "Status":  "Covered",
-                         "Code":  "script.compilation_failed",
+                         "Code":  "script.compilation.failed",
                          "Note":  "Преобразуется внешней оберткой компиляции сценария и покрыто ее матричным тестом."
                      },
                      {
@@ -606,7 +606,7 @@
                          "ExceptionType":  "NativeCompilerException",
                          "Statement":  "throw new NativeCompilerException(BilingualString.Localize( $\"Метод {targetType}.{name} не является функцией\", $\"Method {targetType}.{name} is not a function\"), ToCodePosition(node.Location));",
                          "Status":  "Covered",
-                         "Code":  "script.compilation_failed",
+                         "Code":  "script.compilation.failed",
                          "Note":  "Преобразуется внешней оберткой компиляции сценария и покрыто ее матричным тестом."
                      },
                      {
@@ -614,7 +614,7 @@
                          "ExceptionType":  "NativeCompilerException",
                          "Statement":  "throw new NativeCompilerException(BilingualString.Localize( $\"Свойство {name} не определено для типа {targetType}\", $\"Property {name} is not defined for type {targetType}\"));",
                          "Status":  "Covered",
-                         "Code":  "script.compilation_failed",
+                         "Code":  "script.compilation.failed",
                          "Note":  "Преобразуется внешней оберткой компиляции сценария и покрыто ее матричным тестом."
                      },
                      {
@@ -662,7 +662,7 @@
                          "ExceptionType":  "InvalidOperationException",
                          "Statement":  "?? throw new InvalidOperationException($\"No member found {key}\"));",
                          "Status":  "Covered",
-                         "Code":  "script.compilation_failed",
+                         "Code":  "script.compilation.failed",
                          "Note":  "Перехватывается компилятором и превращается в NativeCompilerException, покрытую оберткой сценария."
                      },
                      {
@@ -670,7 +670,7 @@
                          "ExceptionType":  "RuntimeException.MissedArgument",
                          "Statement":  "throw RuntimeException.MissedArgument();",
                          "Status":  "Covered",
-                         "Code":  "call.too_few_arguments",
+                         "Code":  "call.arguments.too_few",
                          "Note":  "Покрыто матричным тестом вызова Массив.Вставить() без обязательного аргумента."
                      },
                      {
@@ -734,7 +734,7 @@
                          "ExceptionType":  "BslExceptions.ValueIsNotObjectException",
                          "Statement":  "throw BslExceptions.ValueIsNotObjectException();",
                          "Status":  "Covered",
-                         "Code":  "type.object_required",
+                         "Code":  "type.value.object_required",
                          "Note":  "Покрыто матричным тестом обращения к члену не объектного значения."
                      },
                      {
@@ -774,7 +774,7 @@
                          "ExceptionType":  "RuntimeException.TooManyArgumentsPassed",
                          "Statement":  "throw RuntimeException.TooManyArgumentsPassed();",
                          "Status":  "Covered",
-                         "Code":  "call.too_many_arguments",
+                         "Code":  "call.arguments.too_many",
                          "Note":  "Покрыто матричным тестом избыточных аргументов вызова."
                      },
                      {
@@ -798,7 +798,7 @@
                          "ExceptionType":  "IndexOutOfRangeException",
                          "Statement":  "throw new IndexOutOfRangeException(\"Переполнение при работе с буфером\");",
                          "Status":  "Covered",
-                         "Code":  "binary.buffer_out_of_bounds",
+                         "Code":  "binary.buffer.out_of_bounds",
                          "Note":  "Покрыто матричным тестом переполнения двоичного буфера."
                      },
                      {
@@ -814,7 +814,7 @@
                          "ExceptionType":  "RuntimeException",
                          "Statement":  "throw new RuntimeException(\"Буфер находится в режиме \\\"Только чтение\\\"\");",
                          "Status":  "Covered",
-                         "Code":  "binary.read_only",
+                         "Code":  "binary.buffer.read_only",
                          "Note":  "Покрыто правилом и матричным тестом."
                      },
                      {
@@ -822,7 +822,7 @@
                          "ExceptionType":  "RuntimeException.IndexOutOfRange",
                          "Statement":  "throw RuntimeException.IndexOutOfRange();",
                          "Status":  "Covered",
-                         "Code":  "collection.index_out_of_range",
+                         "Code":  "collection.index.out_of_range",
                          "Note":  "Сообщение не отличимо от общей ошибки индекса, безопасна только существующая классификация."
                      },
                      {
@@ -1038,7 +1038,7 @@
                          "ExceptionType":  "RuntimeException",
                          "Statement":  "throw new RuntimeException(\"Попытка записи в поток не поддерживающий запись\", \"Cannot write to a stream that does not support writing\");",
                          "Status":  "Covered",
-                         "Code":  "stream.not_writable",
+                         "Code":  "stream.access.not_writable",
                          "Note":  "Покрыто правилом и матричным тестом."
                      },
                      {
@@ -1062,7 +1062,7 @@
                          "ExceptionType":  "FormatException",
                          "Statement":  "throw new FormatException(\"Неверный формат шестнадцатеричной строки\");",
                          "Status":  "Covered",
-                         "Code":  "binary.invalid_hex",
+                         "Code":  "binary.format.hex.invalid",
                          "Note":  "Покрыто правилом и матричным тестом."
                      },
                      {
@@ -1094,7 +1094,7 @@
                          "ExceptionType":  "RuntimeException.IndexOutOfRange",
                          "Statement":  "throw RuntimeException.IndexOutOfRange();",
                          "Status":  "Covered",
-                         "Code":  "collection.index_out_of_range",
+                         "Code":  "collection.index.out_of_range",
                          "Note":  "Стандартная ошибка выхода индекса коллекции за границы."
                      },
                      {
@@ -1118,7 +1118,7 @@
                          "ExceptionType":  "RuntimeException",
                          "Statement":  "throw new RuntimeException(\"Индексированное значение доступно только для чтения\");",
                          "Status":  "Covered",
-                         "Code":  "collection.indexed_value_read_only",
+                         "Code":  "collection.indexed_value.read_only",
                          "Note":  "Покрыто матричным тестом."
                      },
                      {
@@ -1126,7 +1126,7 @@
                          "ExceptionType":  "RuntimeException",
                          "Statement":  "throw new RuntimeException(\"Значение, соответствующее ключу, не задано\");",
                          "Status":  "Covered",
-                         "Code":  "collection.key_not_found",
+                         "Code":  "collection.key.not_found",
                          "Note":  "Покрыто матричным тестом."
                      },
                      {
@@ -1134,7 +1134,7 @@
                          "ExceptionType":  "RuntimeException",
                          "Statement":  "throw new RuntimeException(\"Индексированное значение доступно только для чтения\");",
                          "Status":  "Covered",
-                         "Code":  "collection.indexed_value_read_only",
+                         "Code":  "collection.indexed_value.read_only",
                          "Note":  "Покрыто матричным тестом."
                      },
                      {
@@ -1150,7 +1150,7 @@
                          "ExceptionType":  "Rethrow",
                          "Statement":  "_ =\u003e throw new RuntimeException(\"В качестве параметра для конструктора можно передавать только Структура или Ключи и Значения\") };",
                          "Status":  "Covered",
-                         "Code":  "collection.invalid_constructor_argument",
+                         "Code":  "collection.constructor.argument.invalid",
                          "Note":  "Покрыто матричным тестом фиксированной структуры."
                      },
                      {
@@ -1158,7 +1158,7 @@
                          "ExceptionType":  "RuntimeException",
                          "Statement":  "throw new RuntimeException(\"Свойство только для чтения\");",
                          "Status":  "Covered",
-                         "Code":  "object.property_not_writable",
+                         "Code":  "object.property.not_writable",
                          "Note":  "Покрыто матричным тестом."
                      },
                      {
@@ -1190,7 +1190,7 @@
                          "ExceptionType":  "InvalidPropertyNameException",
                          "Statement":  "throw InvalidPropertyNameException(name);",
                          "Status":  "Implemented",
-                         "Code":  "object.invalid_property_name",
+                         "Code":  "object.property.name.invalid",
                          "Note":  "Покрыто матричным тестом операций Структуры."
                      },
                      {
@@ -1198,7 +1198,7 @@
                          "ExceptionType":  "Rethrow",
                          "Statement":  "_ =\u003e throw new RuntimeException(\"В качестве параметра для конструктора можно передавать только ФиксированнаяСтруктура или Ключи и Значения\") };",
                          "Status":  "Covered",
-                         "Code":  "collection.invalid_constructor_argument",
+                         "Code":  "collection.constructor.argument.invalid",
                          "Note":  "Покрыто матричным тестом Структуры."
                      },
                      {
@@ -1206,7 +1206,7 @@
                          "ExceptionType":  "ElementDoesntBelongException",
                          "Statement":  "throw ElementDoesntBelongException();",
                          "Status":  "Implemented",
-                         "Code":  "collection.element_not_member",
+                         "Code":  "collection.element.not_member",
                          "Note":  "Покрыто матричным тестом СпискаЗначений."
                      },
                      {
@@ -1214,7 +1214,7 @@
                          "ExceptionType":  "IndexedIsReadonlyException",
                          "Statement":  "throw IndexedIsReadonlyException();",
                          "Status":  "Covered",
-                         "Code":  "collection.indexed_value_read_only",
+                         "Code":  "collection.indexed_value.read_only",
                          "Note":  "Покрыто матричным тестом СпискаЗначений."
                      },
                      {
@@ -1222,7 +1222,7 @@
                          "ExceptionType":  "RuntimeException.IndexOutOfRange",
                          "Statement":  "throw RuntimeException.IndexOutOfRange();",
                          "Status":  "Covered",
-                         "Code":  "collection.index_out_of_range",
+                         "Code":  "collection.index.out_of_range",
                          "Note":  "Стандартная ошибка выхода индекса коллекции за границы."
                      },
                      {
@@ -1254,7 +1254,7 @@
                          "ExceptionType":  "ColumnException.WrongColumnName",
                          "Statement":  "var field = source.GetField(name) ?? throw ColumnException.WrongColumnName(fieldName);",
                          "Status":  "Covered",
-                         "Code":  "table.invalid_column_name",
+                         "Code":  "table.column.name.invalid",
                          "Note":  "Покрыто матричным тестом ошибок ТаблицыЗначений."
                      },
                      {
@@ -1278,7 +1278,7 @@
                          "ExceptionType":  "ColumnException.ColumnsMixed",
                          "Statement":  "throw ColumnException.ColumnsMixed(groupColumn.Name);",
                          "Status":  "Covered",
-                         "Code":  "table.column_role_conflict",
+                         "Code":  "table.column.role.conflict",
                          "Note":  "Покрыто матричным тестом ошибок ТаблицыЗначений."
                      },
                      {
@@ -1286,7 +1286,7 @@
                          "ExceptionType":  "ColumnException.WrongColumnName",
                          "Statement":  "?? throw ColumnException.WrongColumnName(column_name);",
                          "Status":  "Covered",
-                         "Code":  "table.invalid_column_name",
+                         "Code":  "table.column.name.invalid",
                          "Note":  "Покрыто матричным тестом ошибок ТаблицыЗначений."
                      },
                      {
@@ -1294,7 +1294,7 @@
                          "ExceptionType":  "ColumnException.WrongColumnName",
                          "Statement":  "throw ColumnException.WrongColumnName();",
                          "Status":  "Covered",
-                         "Code":  "table.invalid_column_name",
+                         "Code":  "table.column.name.invalid",
                          "Note":  "Покрыто матричным тестом ошибок ТаблицыЗначений."
                      },
                      {
@@ -1302,7 +1302,7 @@
                          "ExceptionType":  "ColumnException.WrongColumnName",
                          "Statement":  "throw ColumnException.WrongColumnName(column_name);",
                          "Status":  "Covered",
-                         "Code":  "table.invalid_column_name",
+                         "Code":  "table.column.name.invalid",
                          "Note":  "Покрыто матричным тестом ошибок ТаблицыЗначений."
                      },
                      {
@@ -1326,7 +1326,7 @@
                          "ExceptionType":  "RuntimeException.IncorrectOffset",
                          "Statement":  "throw RuntimeException.IncorrectOffset();",
                          "Status":  "Covered",
-                         "Code":  "table.invalid_offset",
+                         "Code":  "table.offset.invalid",
                          "Note":  "Покрыто матричным тестом ТаблицаЗначений.Сдвинуть()."
                      },
                      {
@@ -1334,7 +1334,7 @@
                          "ExceptionType":  "RuntimeException.IndexOutOfRange",
                          "Statement":  "throw RuntimeException.IndexOutOfRange();",
                          "Status":  "Covered",
-                         "Code":  "collection.index_out_of_range",
+                         "Code":  "collection.index.out_of_range",
                          "Note":  "Стандартная ошибка выхода индекса коллекции за границы."
                      },
                      {
@@ -1390,7 +1390,7 @@
                          "ExceptionType":  "ValueTableException.RowDoesntBelongTo",
                          "Statement":  "throw ValueTableException.RowDoesntBelongTo();",
                          "Status":  "Covered",
-                         "Code":  "collection.element_not_member",
+                         "Code":  "collection.element.not_member",
                          "Note":  "Покрыто матричным тестом строки чужой ТаблицыЗначений."
                      },
                      {
@@ -1398,7 +1398,7 @@
                          "ExceptionType":  "ColumnException.WrongColumnName",
                          "Statement":  "throw ColumnException.WrongColumnName();",
                          "Status":  "Covered",
-                         "Code":  "table.invalid_column_name",
+                         "Code":  "table.column.name.invalid",
                          "Note":  "Покрыто матричным тестом ошибок ТаблицыЗначений."
                      },
                      {
@@ -1406,7 +1406,7 @@
                          "ExceptionType":  "ColumnException.DuplicatedColumnName",
                          "Statement":  "throw ColumnException.DuplicatedColumnName(name);",
                          "Status":  "Covered",
-                         "Code":  "table.column_already_exists",
+                         "Code":  "table.column.already_exists",
                          "Note":  "Покрыто матричным тестом ошибок ТаблицыЗначений."
                      },
                      {
@@ -1414,7 +1414,7 @@
                          "ExceptionType":  "ColumnException.WrongColumnName",
                          "Statement":  "throw ColumnException.WrongColumnName(name);",
                          "Status":  "Covered",
-                         "Code":  "table.invalid_column_name",
+                         "Code":  "table.column.name.invalid",
                          "Note":  "Покрыто матричным тестом ошибок ТаблицыЗначений."
                      },
                      {
@@ -1422,7 +1422,7 @@
                          "ExceptionType":  "PropertyAccessException.PropNotFoundException",
                          "Statement":  "?? throw PropertyAccessException.PropNotFoundException(index.ToString());",
                          "Status":  "Covered",
-                         "Code":  "object.property_not_found",
+                         "Code":  "object.property.not_found",
                          "Note":  "Покрыто матричным тестом обращения к несуществующему свойству."
                      },
                      {
@@ -1430,7 +1430,7 @@
                          "ExceptionType":  "PropertyAccessException.PropNotFoundException",
                          "Statement":  "throw PropertyAccessException.PropNotFoundException(name);",
                          "Status":  "Covered",
-                         "Code":  "object.property_not_found",
+                         "Code":  "object.property.not_found",
                          "Note":  "Покрыто матричным тестом обращения к несуществующему свойству."
                      },
                      {
@@ -1438,7 +1438,7 @@
                          "ExceptionType":  "RuntimeException.IndexOutOfRange",
                          "Statement":  "throw RuntimeException.IndexOutOfRange();",
                          "Status":  "Covered",
-                         "Code":  "collection.index_out_of_range",
+                         "Code":  "collection.index.out_of_range",
                          "Note":  "Стандартная ошибка выхода индекса коллекции за границы."
                      },
                      {
@@ -1454,7 +1454,7 @@
                          "ExceptionType":  "ColumnException.WrongColumnName",
                          "Statement":  "throw ColumnException.WrongColumnName();",
                          "Status":  "Covered",
-                         "Code":  "table.invalid_column_name",
+                         "Code":  "table.column.name.invalid",
                          "Note":  "Покрыто общим правилом и матричным тестом сигнатуры ошибки колонки."
                      },
                      {
@@ -1462,7 +1462,7 @@
                          "ExceptionType":  "ColumnException.DuplicatedColumnName",
                          "Statement":  "throw ColumnException.DuplicatedColumnName(name);",
                          "Status":  "Covered",
-                         "Code":  "table.column_already_exists",
+                         "Code":  "table.column.already_exists",
                          "Note":  "Покрыто общим правилом и матричным тестом сигнатуры ошибки колонки."
                      },
                      {
@@ -1470,7 +1470,7 @@
                          "ExceptionType":  "PropertyAccessException.PropNotFoundException",
                          "Statement":  "throw PropertyAccessException.PropNotFoundException(index.ToString());",
                          "Status":  "Covered",
-                         "Code":  "object.property_not_found",
+                         "Code":  "object.property.not_found",
                          "Note":  "Покрыто матричным тестом обращения к несуществующему свойству."
                      },
                      {
@@ -1478,7 +1478,7 @@
                          "ExceptionType":  "PropertyAccessException.PropNotFoundException",
                          "Statement":  "throw PropertyAccessException.PropNotFoundException(name);",
                          "Status":  "Covered",
-                         "Code":  "object.property_not_found",
+                         "Code":  "object.property.not_found",
                          "Note":  "Покрыто матричным тестом обращения к несуществующему свойству."
                      },
                      {
@@ -1486,7 +1486,7 @@
                          "ExceptionType":  "PropertyAccessException.PropNotFoundException",
                          "Statement":  "throw PropertyAccessException.PropNotFoundException(name.Trim());",
                          "Status":  "Covered",
-                         "Code":  "object.property_not_found",
+                         "Code":  "object.property.not_found",
                          "Note":  "Покрыто матричным тестом обращения к несуществующему свойству."
                      },
                      {
@@ -1510,7 +1510,7 @@
                          "ExceptionType":  "PropertyAccessException.PropNotFoundException",
                          "Statement":  "throw PropertyAccessException.PropNotFoundException(name);",
                          "Status":  "Covered",
-                         "Code":  "object.property_not_found",
+                         "Code":  "object.property.not_found",
                          "Note":  "Покрыто матричным тестом обращения к несуществующему свойству."
                      },
                      {
@@ -1518,7 +1518,7 @@
                          "ExceptionType":  "ColumnException.WrongColumnName",
                          "Statement":  "throw ColumnException.WrongColumnName();",
                          "Status":  "Covered",
-                         "Code":  "table.invalid_column_name",
+                         "Code":  "table.column.name.invalid",
                          "Note":  "Покрыто общим правилом и матричным тестом сигнатуры ошибки колонки."
                      },
                      {
@@ -1526,7 +1526,7 @@
                          "ExceptionType":  "ColumnException.WrongColumnName",
                          "Statement":  "throw ColumnException.WrongColumnName(description[0]);",
                          "Status":  "Covered",
-                         "Code":  "table.invalid_column_name",
+                         "Code":  "table.column.name.invalid",
                          "Note":  "Покрыто общим правилом и матричным тестом сигнатуры ошибки колонки."
                      },
                      {
@@ -1542,7 +1542,7 @@
                          "ExceptionType":  "PropertyAccessException.PropNotFoundException",
                          "Statement":  "throw PropertyAccessException.PropNotFoundException(kv.Key.ToString());",
                          "Status":  "Covered",
-                         "Code":  "object.property_not_found",
+                         "Code":  "object.property.not_found",
                          "Note":  "Покрыто матричным тестом обращения к несуществующему свойству."
                      },
                      {
@@ -1590,7 +1590,7 @@
                          "ExceptionType":  "ScriptCompilingException",
                          "Statement":  "throw ScriptCompilingException(e);",
                          "Status":  "Implemented",
-                         "Code":  "script.compilation_failed",
+                         "Code":  "script.compilation.failed",
                          "Note":  "Покрыто матричным тестом ЗагрузитьСценарийИзСтроки()."
                      },
                      {
@@ -1702,7 +1702,7 @@
                          "ExceptionType":  "RuntimeException",
                          "Statement":  "throw new RuntimeException(\"Заголовок Content-Length задан неправильно\");",
                          "Status":  "Covered",
-                         "Code":  "http.invalid_header",
+                         "Code":  "http.header.invalid",
                          "Note":  "Покрыто матричным тестом HTTPСоединения."
                      },
                      {
@@ -1710,7 +1710,7 @@
                          "ExceptionType":  "RuntimeException",
                          "Statement":  "throw new RuntimeException(\"Заголовок Date задан неправильно\");",
                          "Status":  "Covered",
-                         "Code":  "http.invalid_header",
+                         "Code":  "http.header.invalid",
                          "Note":  "Покрыто матричным тестом HTTPСоединения."
                      },
                      {
@@ -1718,7 +1718,7 @@
                          "ExceptionType":  "RuntimeException",
                          "Statement":  "throw new RuntimeException(\"Заголовок If-Modified-Since задан неправильно\");",
                          "Status":  "Covered",
-                         "Code":  "http.invalid_header",
+                         "Code":  "http.header.invalid",
                          "Note":  "Покрыто матричным тестом HTTPСоединения."
                      },
                      {
@@ -1726,7 +1726,7 @@
                          "ExceptionType":  "RuntimeException",
                          "Statement":  "throw new RuntimeException(\"Заголовок Range задан неправильно\");",
                          "Status":  "Covered",
-                         "Code":  "http.invalid_header",
+                         "Code":  "http.header.invalid",
                          "Note":  "Покрыто матричным тестом HTTPСоединения."
                      },
                      {
@@ -1734,7 +1734,7 @@
                          "ExceptionType":  "RuntimeException",
                          "Statement":  "throw new RuntimeException(\"Защищенное соединение по произвольным сертификатам не поддерживается. Если необходим доступ по https, просто укажите протокол https в адресе хоста.\");",
                          "Status":  "Covered",
-                         "Code":  "http.custom_certificate_unsupported",
+                         "Code":  "http.certificate.custom.not_supported",
                          "Note":  "Покрыто матричным тестом HTTPСоединения."
                      },
                      {
@@ -1782,7 +1782,7 @@
                          "ExceptionType":  "InvalidJsonException",
                          "Statement":  "throw InvalidJsonException();",
                          "Status":  "Covered",
-                         "Code":  "json.invalid_syntax",
+                         "Code":  "json.syntax.invalid",
                          "Note":  "Покрыто матричным тестом ПрочитатьJSON() с некорректным JSON."
                      },
                      {
@@ -1790,7 +1790,7 @@
                          "ExceptionType":  "InvalidJsonException",
                          "Statement":  "throw InvalidJsonException(exc.Message);",
                          "Status":  "Covered",
-                         "Code":  "json.invalid_syntax",
+                         "Code":  "json.syntax.invalid",
                          "Note":  "Покрыто матричным тестом ПрочитатьJSON() с некорректным JSON."
                      },
                      {
@@ -1814,7 +1814,7 @@
                          "ExceptionType":  "RuntimeException",
                          "Statement":  "throw new RuntimeException(Locale.NStr( \"ru=\u0027Формат даты JavaScript не поддерживается.\u0027; en=\u0027JavaScript date format is not supported\u0027\"));",
                          "Status":  "Covered",
-                         "Code":  "json.unsupported_date_format",
+                         "Code":  "json.date.format.not_supported",
                          "Note":  "Покрыто правилом и матричным тестом."
                      },
                      {
@@ -1822,7 +1822,7 @@
                          "ExceptionType":  "RuntimeException",
                          "Statement":  "throw new RuntimeException(Locale.NStr(\"ru=\u0027Представление даты имеет неверный формат.\u0027; en=\u0027Invalid date presentation format\u0027\"));",
                          "Status":  "Implemented",
-                         "Code":  "json.invalid_date_presentation",
+                         "Code":  "json.date.presentation.invalid",
                          "Note":  "Покрыто матричным тестом."
                      },
                      {
@@ -1846,7 +1846,7 @@
                          "ExceptionType":  "RuntimeException",
                          "Statement":  "throw new RuntimeException(e.Message, e);",
                          "Status":  "Implemented",
-                         "Code":  "filesystem.not_found",
+                         "Code":  "filesystem.resource.not_found",
                          "Note":  "Покрыто матричным тестом ОткрытьФайл() объекта ИзвлечениеДанныхJSON."
                      },
                      {
@@ -1854,7 +1854,7 @@
                          "ExceptionType":  "RuntimeException",
                          "Statement":  "throw new RuntimeException(Locale.NStr( \"ru=\u0027Невозможно сохранить локальную дату в формате JavaScript\u0027; en=\u0027Cannot save local date in JavaScript format\u0027\"));",
                          "Status":  "Implemented",
-                         "Code":  "json.local_date_not_supported",
+                         "Code":  "json.date.local.not_supported",
                          "Note":  "Покрыто матричным тестом."
                      },
                      {
@@ -1862,7 +1862,7 @@
                          "ExceptionType":  "RuntimeException",
                          "Statement":  "throw new RuntimeException(Locale.NStr( \"ru=\u0027Невозможно сохранить локальную дату в формате Microsoft\u0027; en=\u0027Cannot save local date in Microsoft format\u0027\"));",
                          "Status":  "Implemented",
-                         "Code":  "json.local_date_not_supported",
+                         "Code":  "json.date.local.not_supported",
                          "Note":  "Покрыто матричным тестом."
                      },
                      {
@@ -1902,7 +1902,7 @@
                          "ExceptionType":  "JSONReaderException.CannotGetValue",
                          "Statement":  "throw JSONReaderException.CannotGetValue();",
                          "Status":  "Covered",
-                         "Code":  "json.value_unavailable",
+                         "Code":  "json.value.unavailable",
                          "Note":  "Покрыто матричным тестом недоступного текущего значения ЧтенияJSON."
                      },
                      {
@@ -1910,7 +1910,7 @@
                          "ExceptionType":  "JSONReaderException.NotOpen",
                          "Statement":  "if (_reader == null) throw JSONReaderException.NotOpen();",
                          "Status":  "Covered",
-                         "Code":  "json.reader_not_open",
+                         "Code":  "json.reader.not_open",
                          "Note":  "Покрыто матричным тестом чтения JSON до открытия источника."
                      },
                      {
@@ -1918,7 +1918,7 @@
                          "ExceptionType":  "JSONReaderException.UnexpectedSymbol",
                          "Statement":  "throw JSONReaderException.UnexpectedSymbol();",
                          "Status":  "Implemented",
-                         "Code":  "json.invalid_syntax",
+                         "Code":  "json.syntax.invalid",
                          "Note":  "Покрыто матричным тестом ЧтениеJSON.Прочитать() со значением undefined."
                      },
                      {
@@ -1926,7 +1926,7 @@
                          "ExceptionType":  "RuntimeException",
                          "Statement":  "throw new RuntimeException(e.Message, e);",
                          "Status":  "Covered",
-                         "Code":  "filesystem.not_found",
+                         "Code":  "filesystem.resource.not_found",
                          "Note":  "Покрыто матричным тестом ЧтениеJSON.ОткрытьФайл() с отсутствующим файлом."
                      },
                      {
@@ -1942,7 +1942,7 @@
                          "ExceptionType":  "CannotWriteException",
                          "Statement":  "throw CannotWriteException();",
                          "Status":  "Covered",
-                         "Code":  "stream.not_writable",
+                         "Code":  "stream.access.not_writable",
                          "Note":  "Покрыто матричным тестом ЗаписьJSON.ОткрытьПоток() с потоком только для чтения."
                      },
                      {
@@ -1958,7 +1958,7 @@
                          "ExceptionType":  "NotOpenException",
                          "Statement":  "throw NotOpenException();",
                          "Status":  "Covered",
-                         "Code":  "json.writer_not_open",
+                         "Code":  "json.writer.not_open",
                          "Note":  "Покрыто матричным тестом записи JSON до открытия приемника."
                      },
                      {
@@ -1966,7 +1966,7 @@
                          "ExceptionType":  "RuntimeException",
                          "Statement":  "throw new RuntimeException(e.Message, e);",
                          "Status":  "Implemented",
-                         "Code":  "filesystem.not_found",
+                         "Code":  "filesystem.resource.not_found",
                          "Note":  "Покрыто матричным тестом ЗаписьJSON.ОткрытьФайл() в отсутствующем каталоге."
                      },
                      {
@@ -1974,7 +1974,7 @@
                          "ExceptionType":  "TypeNotSupportedException",
                          "Statement":  "throw TypeNotSupportedException(value?.GetType());",
                          "Status":  "Covered",
-                         "Code":  "json.unsupported_value_type",
+                         "Code":  "json.value.type.not_supported",
                          "Note":  "Покрыто матричным тестом ЗаписьJSON.ЗаписатьЗначение() с Массивом."
                      },
                      {
@@ -1982,7 +1982,7 @@
                          "ExceptionType":  "NotSupportedException",
                          "Statement":  "throw new NotSupportedException(\"Явное указание кодировки в данной версии не поддерживается (только utf-8 согласно RFC 3986)\");",
                          "Status":  "Covered",
-                         "Code":  "url.explicit_encoding_unsupported",
+                         "Code":  "url.encoding.explicit.not_supported",
                          "Note":  "Покрыто встроенным правилом точного типа и сообщения."
                      },
                      {
@@ -1998,7 +1998,7 @@
                          "ExceptionType":  "RuntimeException",
                          "Statement":  "throw new RuntimeException(sb.ToString());",
                          "Status":  "Covered",
-                         "Code":  "script.compilation_failed",
+                         "Code":  "script.compilation.failed",
                          "Note":  "Покрыто матричным тестом ошибки компиляции СкомпилированногоФрагмента."
                      },
                      {
@@ -2006,7 +2006,7 @@
                          "ExceptionType":  "RuntimeException",
                          "Statement":  "throw new RuntimeException(text);",
                          "Status":  "Covered",
-                         "Code":  "script.compilation_failed",
+                         "Code":  "script.compilation.failed",
                          "Note":  "Покрыто матричным тестом ошибки разбора СкомпилированногоФрагмента."
                      },
                      {
@@ -2014,7 +2014,7 @@
                          "ExceptionType":  "PropertyAccessException.PropNotFoundException",
                          "Statement":  "throw PropertyAccessException.PropNotFoundException(name);",
                          "Status":  "Covered",
-                         "Code":  "object.property_not_found",
+                         "Code":  "object.property.not_found",
                          "Note":  "Стандартная ошибка отсутствующего свойства покрыта матрицей объектов."
                      },
                      {
@@ -2038,7 +2038,7 @@
                          "ExceptionType":  "RuntimeException",
                          "Statement":  "throw new RuntimeException($\"Не удалось создать объект `{componentName}` внешней компоненты `{identifier}`\");",
                          "Status":  "Covered",
-                         "Code":  "external_component.object_creation_failed",
+                         "Code":  "external_component.object.creation.failed",
                          "Note":  "Покрыто правилом и матричным тестом внешних компонентов."
                      },
                      {
@@ -2054,7 +2054,7 @@
                          "ExceptionType":  "RuntimeException.MethodNotFoundException",
                          "Statement":  "throw RuntimeException.MethodNotFoundException(name);",
                          "Status":  "Covered",
-                         "Code":  "object.method_not_found",
+                         "Code":  "object.method.not_found",
                          "Note":  "Стандартная ошибка отсутствующего метода покрыта матрицей объектов."
                      },
                      {
@@ -2086,7 +2086,7 @@
                          "ExceptionType":  "CreateNotFoundException",
                          "Statement":  "throw CreateNotFoundException(componentName);",
                          "Status":  "Covered",
-                         "Code":  "external_component.object_creation_failed",
+                         "Code":  "external_component.object.creation.failed",
                          "Note":  "Покрыто правилом и матричным тестом внешних компонентов."
                      },
                      {
@@ -2094,7 +2094,7 @@
                          "ExceptionType":  "RuntimeException",
                          "Statement":  "throw new RuntimeException( $\"Не удалось создать объект `{componentName}` внешней компоненты `{_identifier}`\");",
                          "Status":  "Covered",
-                         "Code":  "external_component.object_creation_failed",
+                         "Code":  "external_component.object.creation.failed",
                          "Note":  "Покрыто правилом и матричным тестом внешних компонентов."
                      },
                      {
@@ -2254,7 +2254,7 @@
                          "ExceptionType":  "PropertyAccessException.PropIsNotWritableException",
                          "Statement":  "throw PropertyAccessException.PropIsNotWritableException(prop);",
                          "Status":  "Covered",
-                         "Code":  "object.property_not_writable",
+                         "Code":  "object.property.not_writable",
                          "Note":  "Стандартная ошибка свойства только для чтения покрыта матрицей объектов."
                      },
                      {
@@ -2278,7 +2278,7 @@
                          "ExceptionType":  "RuntimeException.TooFewArgumentsPassed",
                          "Statement":  "throw RuntimeException.TooFewArgumentsPassed();",
                          "Status":  "Covered",
-                         "Code":  "call.too_few_arguments",
+                         "Code":  "call.arguments.too_few",
                          "Note":  "Стандартная ошибка вызова покрыта матрицей строковых операций."
                      },
                      {
@@ -2286,7 +2286,7 @@
                          "ExceptionType":  "RuntimeException.TooManyArgumentsPassed",
                          "Statement":  "throw RuntimeException.TooManyArgumentsPassed();",
                          "Status":  "Covered",
-                         "Code":  "call.too_many_arguments",
+                         "Code":  "call.arguments.too_many",
                          "Note":  "Стандартная ошибка вызова покрыта матрицей строковых операций."
                      },
                      {
@@ -2294,7 +2294,7 @@
                          "ExceptionType":  "NotSupportedException",
                          "Statement":  "throw new NotSupportedException(\"Getting object by classname not supported on net6+\");",
                          "Status":  "Implemented",
-                         "Code":  "com.active_object_not_supported",
+                         "Code":  "com.active_object.not_supported",
                          "Note":  "Подтверждено интеграционным сценарием ПолучитьCOMОбъект() на .NET 6+."
                      },
                      {
@@ -2342,7 +2342,7 @@
                          "ExceptionType":  "RuntimeException.TooManyArgumentsPassed",
                          "Statement":  "throw RuntimeException.TooManyArgumentsPassed();",
                          "Status":  "Covered",
-                         "Code":  "call.too_many_arguments",
+                         "Code":  "call.arguments.too_many",
                          "Note":  "Покрыто матричным тестом избыточных аргументов СтрШаблон()."
                      },
                      {
@@ -2366,7 +2366,7 @@
                          "ExceptionType":  "StringOpException.TemplateSubst",
                          "Statement":  "throw StringOpException.TemplateSubst(m.Index + 2, number);",
                          "Status":  "Implemented",
-                         "Code":  "string.template_invalid_syntax",
+                         "Code":  "string.template.syntax.invalid",
                          "Note":  "Покрыто матричным тестом недопустимого номера подстановки СтрШаблон()."
                      },
                      {
@@ -2374,7 +2374,7 @@
                          "ExceptionType":  "StringOpException.TemplateSyntax",
                          "Statement":  "throw StringOpException.TemplateSyntax(m.Index + 2);",
                          "Status":  "Implemented",
-                         "Code":  "string.template_invalid_syntax",
+                         "Code":  "string.template.syntax.invalid",
                          "Note":  "Покрыто матричным тестом некорректного синтаксиса СтрШаблон()."
                      },
                      {
@@ -2398,7 +2398,7 @@
                          "ExceptionType":  "Rethrow",
                          "Statement":  "throw new ParametrizedRuntimeException( Locale.NStr(\"ru = \u0027Задания завершились с ошибками\u0027;en = \u0027Tasks are completed with errors\u0027\"),",
                          "Status":  "Covered",
-                         "Code":  "background_tasks.failed",
+                         "Code":  "background_task.failed",
                          "Note":  "Покрыто матричным тестом сбоя фоновых задач."
                      },
                      {
@@ -2462,7 +2462,7 @@
                          "ExceptionType":  "RuntimeException.InvalidEncoding",
                          "Statement":  "throw RuntimeException.InvalidEncoding(encoding);",
                          "Status":  "Covered",
-                         "Code":  "text.unknown_encoding",
+                         "Code":  "text.encoding.unknown",
                          "Note":  "Стандартная ошибка неизвестной текстовой кодировки."
                      },
                      {
@@ -2494,7 +2494,7 @@
                          "ExceptionType":  "RuntimeException.NonWritableStream",
                          "Statement":  "throw RuntimeException.NonWritableStream();",
                          "Status":  "Covered",
-                         "Code":  "stream.not_writable",
+                         "Code":  "stream.access.not_writable",
                          "Note":  "Покрыто матричным тестом записи текста в поток только для чтения."
                      },
                      {
@@ -2654,7 +2654,7 @@
                          "ExceptionType":  "NoSystemIdException",
                          "Statement":  "throw NoSystemIdException();",
                          "Status":  "Implemented",
-                         "Code":  "xml.system_id_missing",
+                         "Code":  "xml.doctype.system_id.missing",
                          "Note":  "Покрыто матричным тестом отсутствующего системного идентификатора ЗаписиXML."
                      },
                      {
@@ -2662,7 +2662,7 @@
                          "ExceptionType":  "NotOpenException",
                          "Statement":  "throw NotOpenException();",
                          "Status":  "Covered",
-                         "Code":  "xml.writer_not_open",
+                         "Code":  "xml.writer.not_open",
                          "Note":  "Покрыто матричным тестом операции ЗаписиXML до открытия."
                      },
                      {
@@ -2686,7 +2686,7 @@
                          "ExceptionType":  "WrongOrderException",
                          "Statement":  "throw WrongOrderException();",
                          "Status":  "Covered",
-                         "Code":  "xml.invalid_write_state",
+                         "Code":  "xml.writer.invalid_state",
                          "Note":  "Покрыто матричным тестом нарушения порядка записи XML."
                      },
                      {
@@ -3534,7 +3534,7 @@
                          "ExceptionType":  "RuntimeException",
                          "Statement":  "throw new RuntimeException(new BilingualString($\"Ошибка разбора IP адреса: {value}\", $\"Failed to parse IP address: {value}\"));",
                          "Status":  "Implemented",
-                         "Code":  "network.ip_address_invalid",
+                         "Code":  "network.endpoint.address.ip.invalid",
                          "Note":  "Подтверждено интеграционным сценарием ВебСервера."
                      },
                      {
