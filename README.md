@@ -1,7 +1,7 @@
 # native-errors
 
 [![Release](https://img.shields.io/github/release/Stivo182/oscript-native-errors.svg)](https://github.com/Stivo182/oscript-native-errors/releases)
-[![Тестирование](https://github.com/Stivo182/oscript-native-errors/actions/workflows/test.yml/badge.svg)](https://github.com/Stivo182/BenchmarkOneScript/actions/workflows/test.yml)
+[![Тестирование](https://github.com/Stivo182/oscript-native-errors/actions/workflows/test.yml/badge.svg)](https://github.com/Stivo182/oscript-native-errors/actions/workflows/test.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Библиотека OneScript для нормализации исключений встроенных объектов. Она
