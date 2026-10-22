@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "Reviewed": [
+    {
+      "File": "Engine\\FeatureA.cs",
+      "ExceptionType": "RuntimeException",
+      "Statement": "throw new RuntimeException(\"Ошибка A\");",
+      "Status": "Covered",
+      "Code": "example.covered",
+      "Note": "Первое решение."
+    },
+    {
+      "File": "Engine\\FeatureA.cs",
+      "ExceptionType": "RuntimeException",
+      "Statement": "throw new RuntimeException(\"Ошибка A\");",
+      "Status": "Deferred",
+      "Code": "",
+      "Note": "Дублирующее решение."
+    }
+  ]
+}

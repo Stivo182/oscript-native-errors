@@ -1,0 +1,34 @@
+{
+  "Version": 2,
+  "Defaults": [],
+  "Reviewed": [
+    {
+      "CallerAssembly": "OneScript.StandardLibrary",
+      "CallerType": "aHelper",
+      "CallerMember": "Encode",
+      "Instruction": "callvirt",
+      "ExternalAssembly": "System.Private.CoreLib",
+      "ExternalType": "System.Text.Encoding",
+      "ExternalMember": "GetBytes",
+      "Resolved": true,
+      "Status": "Covered",
+      "Codes": ["encoding.invalid_argument"],
+      "Evidence": ["tests/EncodingErrors.os"],
+      "Note": "The helper boundary has runtime evidence."
+    },
+    {
+      "CallerAssembly": "OneScript.StandardLibrary",
+      "CallerType": "aHelper",
+      "CallerMember": "Encode",
+      "Instruction": "callvirt",
+      "ExternalAssembly": "System.Private.CoreLib",
+      "ExternalType": "System.Text.Encoding",
+      "ExternalMember": "GetBytes",
+      "Resolved": true,
+      "Status": "Covered",
+      "Codes": ["encoding.invalid_argument"],
+      "Evidence": ["tests/EncodingErrors.os"],
+      "Note": "The helper boundary has runtime evidence."
+    }
+  ]
+}

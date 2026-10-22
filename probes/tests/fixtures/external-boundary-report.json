@@ -1,0 +1,62 @@
+{
+  "SchemaVersion": 2,
+  "BoundaryCount": 4,
+  "Boundaries": [
+    {
+      "OneScriptObject": "",
+      "OneScriptMember": "",
+      "CallerAssembly": "OneScript.StandardLibrary",
+      "CallerType": "aHelper",
+      "CallerMember": "Encode",
+      "Instruction": "callvirt",
+      "ExternalAssembly": "System.Private.CoreLib",
+      "ExternalType": "System.Text.Encoding",
+      "ExternalMember": "GetBytes",
+      "Resolved": true,
+      "IlOffset": 12,
+      "MetadataToken": 167772162
+    },
+    {
+      "OneScriptObject": "",
+      "OneScriptMember": "",
+      "CallerAssembly": "OneScript.StandardLibrary",
+      "CallerType": "ZHelper",
+      "CallerMember": "Encode",
+      "Instruction": "callvirt",
+      "ExternalAssembly": "System.Private.CoreLib",
+      "ExternalType": "System.Text.Encoding",
+      "ExternalMember": "GetBytes",
+      "Resolved": true,
+      "IlOffset": 24,
+      "MetadataToken": 167772162
+    },
+    {
+      "OneScriptObject": "",
+      "OneScriptMember": "",
+      "CallerAssembly": "OneScript.StandardLibrary",
+      "CallerType": "MissingHelper",
+      "CallerMember": "Invoke",
+      "Instruction": "call",
+      "ExternalAssembly": "MissingDependency",
+      "ExternalType": "MissingBoundary",
+      "ExternalMember": "Invoke",
+      "Resolved": false,
+      "IlOffset": 10,
+      "MetadataToken": 167772161
+    },
+    {
+      "OneScriptObject": "",
+      "OneScriptMember": "",
+      "CallerAssembly": "OneScript.StandardLibrary",
+      "CallerType": "MissingHelper",
+      "CallerMember": "Invoke",
+      "Instruction": "call",
+      "ExternalAssembly": "MissingDependency",
+      "ExternalType": "MissingBoundary",
+      "ExternalMember": "Invoke",
+      "Resolved": false,
+      "IlOffset": 20,
+      "MetadataToken": 167772163
+    }
+  ]
+}

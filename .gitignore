@@ -13,3 +13,13 @@ out/
 
 # VS Code
 .vscode/
+
+# Temporary native error research artifacts
+/probes/**/*.log
+/probes/**/candidate-*.json
+/probes/**/runtime-candidate-*.json
+/probes/**/Проба*.os
+/probes/**/bin/
+/probes/**/obj/
+/probes/data/.refresh-*/
+/probes/data/.backup-*/

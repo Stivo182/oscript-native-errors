@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "Reviewed": [
+    {
+      "File": "Engine\\FeatureA.cs",
+      "ExceptionType": "RuntimeException",
+      "Statement": "throw new RuntimeException(\"Ошибка A\");",
+      "Status": "Covered",
+      "Code": "example.covered",
+      "Note": "Проверено в матрице."
+    },
+    {
+      "File": "Engine\\RemovedFeature.cs",
+      "ExceptionType": "RuntimeException",
+      "Statement": "throw new RuntimeException();",
+      "Status": "Deferred",
+      "Code": "",
+      "Note": "The source signature is no longer present."
+    }
+  ]
+}

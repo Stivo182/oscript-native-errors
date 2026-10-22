@@ -1,0 +1,14 @@
+{
+  "Version": 2,
+  "Defaults": [
+    {
+      "ExternalAssembly": "System.Private.CoreLib",
+      "ExternalType": "System.Text.Encoding",
+      "ExternalMember": "GetBytes",
+      "Status": "Covered",
+      "Codes": [],
+      "Evidence": []
+    }
+  ],
+  "Reviewed": []
+}

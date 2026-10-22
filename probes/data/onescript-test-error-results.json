@@ -1,0 +1,5608 @@
+{
+
+"SchemaVersion": 1,
+
+"SourceRevision": "3415706ff5573bb100dfa022c09966991583446d",
+
+"SourceDirty": true,
+
+"RuntimeVersion": "2.2.1",
+
+"Environment": {
+
+"OperatingSystem": "Microsoft Windows NT 10.0.20348.0",
+
+"DotNetVersion": ""
+
+},
+
+"TestDirectory": ".",
+
+"FileCount": 177,
+
+"CandidateCount": 253,
+
+"ExecutionCount": 48,
+
+"ClassifiedCount": 157,
+
+"UnclassifiedCount": 25,
+
+"NoExceptionCount": 63,
+
+"NotObservedCount": 8,
+
+"RuntimeFailureCount": 0,
+
+"SkippedRunnerCount": 8,
+
+"Results": [
+
+{
+
+"File": "array.os",
+
+"Line": 81,
+
+"TestMethod": "ТестДолжен_ПроверитьОшибкуРазмерности",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_value",
+
+"Description": "Неверное значение аргумента номер 1",
+
+"Output": ""
+
+},
+
+{
+
+"File": "binary-objects.os",
+
+"Line": 257,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоПриЗаписиВБуферСНевернымИндексомВыбрасываетсяИсключение",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "binary.buffer_out_of_bounds",
+
+"Description": "Внешнее исключение (System.IndexOutOfRangeException): Переполнение при работе с буфером",
+
+"Output": ""
+
+},
+
+{
+
+"File": "binary-objects.os",
+
+"Line": 264,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоПриЗаписиВБуферСНевернымИндексомВыбрасываетсяИсключение",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "binary.buffer_out_of_bounds",
+
+"Description": "Внешнее исключение (System.IndexOutOfRangeException): Переполнение при работе с буфером",
+
+"Output": ""
+
+},
+
+{
+
+"File": "binary-objects.os",
+
+"Line": 271,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоПриЗаписиВБуферСНевернымИндексомВыбрасываетсяИсключение",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "binary.buffer_out_of_bounds",
+
+"Description": "Внешнее исключение (System.IndexOutOfRangeException): Переполнение при работе с буфером",
+
+"Output": ""
+
+},
+
+{
+
+"File": "binary-objects.os",
+
+"Line": 278,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоПриЗаписиВБуферСНевернымИндексомВыбрасываетсяИсключение",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "collection.index_out_of_range",
+
+"Description": "Значение индекса выходит за пределы диапазона",
+
+"Output": ""
+
+},
+
+{
+
+"File": "binary-objects.os",
+
+"Line": 343,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоПолучитьПотокТолькоДляЧтенияЗапрещаетЗапись",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "stream.not_writable",
+
+"Description": "Попытка записи в поток не поддерживающий запись",
+
+"Output": ""
+
+},
+
+{
+
+"File": "binary-objects.os",
+
+"Line": 352,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоПолучитьПотокТолькоДляЧтенияЗапрещаетЗапись",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "stream.not_writable",
+
+"Description": "Попытка записи в поток не поддерживающий запись",
+
+"Output": ""
+
+},
+
+{
+
+"File": "BinaryData-global.os",
+
+"Line": 125,
+
+"TestMethod": "ТестДолжен_Проверить_ВыбросИсключенияПриНевалидномФорматеHexСтроки",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "binary.invalid_hex",
+
+"Description": "Внешнее исключение (System.FormatException): Неверный формат шестнадцатеричной строки",
+
+"Output": ""
+
+},
+
+{
+
+"File": "BinaryData-global.os",
+
+"Line": 133,
+
+"TestMethod": "ТестДолжен_Проверить_ВыбросИсключенияПриНевалидномФорматеHexСтроки",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "binary.invalid_hex",
+
+"Description": "Внешнее исключение (System.FormatException): Неверный формат шестнадцатеричной строки",
+
+"Output": ""
+
+},
+
+{
+
+"File": "bitwise.os",
+
+"Line": 62,
+
+"TestMethod": "СдвигВлевоВызвалИсключение",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_value",
+
+"Description": "Неверное значение аргумента 32",
+
+"Output": ""
+
+},
+
+{
+
+"File": "bitwise.os",
+
+"Line": 78,
+
+"TestMethod": "СдвигВправоВызвалИсключение",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_value",
+
+"Description": "Неверное значение аргумента 32",
+
+"Output": ""
+
+},
+
+{
+
+"File": "codestat.os",
+
+"Line": 272,
+
+"TestMethod": "ТестДолжен_ВызватьТестыИзФайлов",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NotObserved",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "config.os",
+
+"Line": 35,
+
+"TestMethod": "ТестДолженПроверитьПорядокПрименения_ПеременнаяОкруженияИмеетВысшийПриоритет",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "config.os",
+
+"Line": 106,
+
+"TestMethod": "ТестДолженПроверитьПереопределениеНесколькихПараметровОдновременно",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "console.os",
+
+"Line": 127,
+
+"TestMethod": "ТестДолжен_ПроверитьПеренаправлениеВывода",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "constructor.os",
+
+"Line": 23,
+
+"TestMethod": "ТестДолжен_СообщитьОбОшибкеНетКонструктора",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "type.constructor_not_found",
+
+"Description": "Конструктор не определен, но переданы параметры конструктора.",
+
+"Output": ""
+
+},
+
+{
+
+"File": "constructor.os",
+
+"Line": 36,
+
+"TestMethod": "ТестДолжен_СообщитьОбОшибкеСлишкомМногоПараметров",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "constructor.invalid_argument_count",
+
+"Description": "Параметры конструктора: необходимых параметров: 3, передано параметров 5",
+
+"Output": ""
+
+},
+
+{
+
+"File": "constructor.os",
+
+"Line": 50,
+
+"TestMethod": "ТестДолжен_СообщитьОбОшибкеСлишкомМалоПараметров",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "constructor.invalid_argument_count",
+
+"Description": "Параметры конструктора: необходимых параметров: 3, передано параметров 2",
+
+"Output": ""
+
+},
+
+{
+
+"File": "constructor.os",
+
+"Line": 114,
+
+"TestMethod": "ТестДолжен_ПроверитьКорректностьПроверкиУказанияФактическихПараметров",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "call.too_few_arguments",
+
+"Description": "Недостаточно фактических параметров",
+
+"Output": ""
+
+},
+
+{
+
+"File": "delegate-action.os",
+
+"Line": 55,
+
+"TestMethod": "ТестНеДолжен_ВыполнитьДействиеОбъектаТеста",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "object.method_not_found",
+
+"Description": "Метод объекта не обнаружен ({<Temp>\\<temporary>}::ПриватныйИсполнитель)",
+
+"Output": ""
+
+},
+
+{
+
+"File": "directives.os",
+
+"Line": 31,
+
+"TestMethod": "ФайлКомпилируется",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "script.compilation_failed",
+
+"Description": "Ошибка компиляции подключаемого сценария: {Модуль <OneScriptTests>\\preprocessor\\use-fail.os / Ошибка в строке: 7,14 / Директива Использовать не разрешена в данном месте}\r #Использовать <<?>>logos",
+
+"Output": ""
+
+},
+
+{
+
+"File": "engine-behaviors.os",
+
+"Line": 70,
+
+"TestMethod": "ТестДолженПроверитьИсключенияИдущиеДругЗаДругом",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "2",
+
+"Output": ""
+
+},
+
+{
+
+"File": "engine-behaviors.os",
+
+"Line": 81,
+
+"TestMethod": "БроситьИсключение",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "1",
+
+"Output": ""
+
+},
+
+{
+
+"File": "engine-behaviors.os",
+
+"Line": 236,
+
+"TestMethod": "ПроброситьИсключение",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "Первое",
+
+"Output": ""
+
+},
+
+{
+
+"File": "engine-behaviors.os",
+
+"Line": 239,
+
+"TestMethod": "ПроброситьИсключение",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "engine-behaviors.os",
+
+"Line": 252,
+
+"TestMethod": "ТестДолжен_ПроверитьВложенностьПробрасываемыхИсключений",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "engine-behaviors.os",
+
+"Line": 262,
+
+"TestMethod": "ТестДолжен_ПроверитьКомпиляциюОбращенияКВозвращаемомуОбъектуЧерезТочку",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "object.property_not_found",
+
+"Description": "Свойство объекта не обнаружено (Свойство)",
+
+"Output": ""
+
+},
+
+{
+
+"File": "engine-behaviors.os",
+
+"Line": 357,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоВозможныПараметризованныеИсключения",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "Привет",
+
+"Output": ""
+
+},
+
+{
+
+"File": "engine-behaviors.os",
+
+"Line": 368,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоВозможноИспользоватьПараметрыОбычногоИсключения",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "Привет",
+
+"Output": ""
+
+},
+
+{
+
+"File": "engine-behaviors.os",
+
+"Line": 529,
+
+"TestMethod": "ТестДолжен_ПроверитьФинальнуюЗапятуюВОбъявленииМетода",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "script.compilation_failed",
+
+"Description": "Ошибка компиляции подключаемого сценария: {Модуль <string A4EFA344> / Ошибка в строке: 6,33 / Ожидается идентификатор}\r                                 )<<?>> Экспорт",
+
+"Output": ""
+
+},
+
+{
+
+"File": "engine-behaviors.os",
+
+"Line": 580,
+
+"TestMethod": "ТестДолжен_ПроверитьПрерываниеВложенныхПопыток",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NotObserved",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "engine-behaviors.os",
+
+"Line": 581,
+
+"TestMethod": "ТестДолжен_ПроверитьПрерываниеВложенныхПопыток",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NotObserved",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "engine-behaviors.os",
+
+"Line": 582,
+
+"TestMethod": "ТестДолжен_ПроверитьПрерываниеВложенныхПопыток",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NotObserved",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "engine-behaviors.os",
+
+"Line": 595,
+
+"TestMethod": "ТестДолжен_ПроверитьПрерываниеВложенныхПопыток",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "НовоеНеВложенное",
+
+"Output": ""
+
+},
+
+{
+
+"File": "engine-behaviors.os",
+
+"Line": 609,
+
+"TestMethod": "ТестДолжен_ПроверитьПродолжениеВложенныхПопыток",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "engine-behaviors.os",
+
+"Line": 612,
+
+"TestMethod": "ТестДолжен_ПроверитьПродолжениеВложенныхПопыток",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NotObserved",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "engine-behaviors.os",
+
+"Line": 613,
+
+"TestMethod": "ТестДолжен_ПроверитьПродолжениеВложенныхПопыток",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NotObserved",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "engine-behaviors.os",
+
+"Line": 716,
+
+"TestMethod": "ТестДолжен_ПроверитьОперацииСДатой_Сложение",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "engine-behaviors.os",
+
+"Line": 728,
+
+"TestMethod": "ТестДолжен_ПроверитьОперацииСДатой_Вычитание",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "engine-behaviors.os",
+
+"Line": 741,
+
+"TestMethod": "ТестДолжен_ПроверитьОперацииСДатой_СложениеДат",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "type.conversion_failed",
+
+"Description": "OneScript.Values.BslDateValue: 01.01.0001 0:00:00 Преобразование к типу 'Число' не поддерживается",
+
+"Output": ""
+
+},
+
+{
+
+"File": "engine-behaviors.os",
+
+"Line": 779,
+
+"TestMethod": "ИсключениеВоВложеннойПопытке",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "Исключение из внешней попытки должна перехватываться",
+
+"Output": ""
+
+},
+
+{
+
+"File": "engine-behaviors.os",
+
+"Line": 781,
+
+"TestMethod": "ИсключениеВоВложеннойПопытке",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "Исключение из вложенной попытки должна перехватываться",
+
+"Output": ""
+
+},
+
+{
+
+"File": "enum.os",
+
+"Line": 23,
+
+"TestMethod": "ТестДолженПроверитьЧтоПростоеПеречислениеПриводитсяКСтроке",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "eval.os",
+
+"Line": 65,
+
+"TestMethod": "ТестДолжен_ПроверитьВычислениеБроскаИсключения",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "ААА",
+
+"Output": ""
+
+},
+
+{
+
+"File": "eval.os",
+
+"Line": 111,
+
+"TestMethod": "ТестДолжен_ПроверитьОператорВыполнитьСВыбросомИсключения",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "123",
+
+"Output": ""
+
+},
+
+{
+
+"File": "eval.os",
+
+"Line": 129,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоВОператореВыполнитьЗапрещенВозврат",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "script.compilation_failed",
+
+"Description": "Оператор \"Возврат\" может использоваться только внутри метода",
+
+"Output": ""
+
+},
+
+{
+
+"File": "eval.os",
+
+"Line": 321,
+
+"TestMethod": "ТестДолжен_ПроверитьВызовыВыполнитьСПопытками",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "events.os",
+
+"Line": 168,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоПодпискаПоОбъектуВидитТолькоЭкспорт",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "object.method_not_found",
+
+"Description": "Метод объекта не обнаружен ({<Temp>\\<temporary>}::ОбработчикСобытияВнутр)",
+
+"Output": ""
+
+},
+
+{
+
+"File": "file-object.os",
+
+"Line": 110,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоНесуществующийФайлНельзяПроверитьНаФайлКаталог",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "filesystem.not_found",
+
+"Description": "Внешнее исключение (System.IO.FileNotFoundException): Could not find file '<Temp>\\<temporary>'.",
+
+"Output": ""
+
+},
+
+{
+
+"File": "file-object.os",
+
+"Line": 116,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоНесуществующийФайлНельзяПроверитьНаФайлКаталог",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "filesystem.not_found",
+
+"Description": "Внешнее исключение (System.IO.FileNotFoundException): Could not find file '<Temp>\\<temporary>'.",
+
+"Output": ""
+
+},
+
+{
+
+"File": "file-object.os",
+
+"Line": 133,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоДляДиректорииВозвращаетсяРодитель",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "fixed-array.os",
+
+"Line": 94,
+
+"TestMethod": "ТестДолжен_ПроверитьНеизменностьФиксированногоМассива",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "Classified",
+
+"Code": "collection.indexed_value_read_only",
+
+"Description": "Индексированное значение доступно только для чтения",
+
+"Output": ""
+
+},
+
+{
+
+"File": "fixed-array.os",
+
+"Line": 112,
+
+"TestMethod": "ТестДолжен_ПроверитьОтсутствиеНенужныхМетодов",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "object.method_not_found",
+
+"Description": "Метод объекта не обнаружен (Добавить)",
+
+"Output": ""
+
+},
+
+{
+
+"File": "fixed-array.os",
+
+"Line": 125,
+
+"TestMethod": "ТестДолжен_ПроверитьОтсутствиеНенужныхМетодов",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "object.method_not_found",
+
+"Description": "Метод объекта не обнаружен (Вставить)",
+
+"Output": ""
+
+},
+
+{
+
+"File": "fixed-array.os",
+
+"Line": 138,
+
+"TestMethod": "ТестДолжен_ПроверитьОтсутствиеНенужныхМетодов",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "object.method_not_found",
+
+"Description": "Метод объекта не обнаружен (Удалить)",
+
+"Output": ""
+
+},
+
+{
+
+"File": "fixed-array.os",
+
+"Line": 151,
+
+"TestMethod": "ТестДолжен_ПроверитьОтсутствиеНенужныхМетодов",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "object.method_not_found",
+
+"Description": "Метод объекта не обнаружен (Очистить)",
+
+"Output": ""
+
+},
+
+{
+
+"File": "fixed-map.os",
+
+"Line": 81,
+
+"TestMethod": "ТестДолжен_ПроверитьОтсутствиеМетодаВставить",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "object.method_not_found",
+
+"Description": "Метод объекта не обнаружен (Вставить)",
+
+"Output": ""
+
+},
+
+{
+
+"File": "fixed-map.os",
+
+"Line": 100,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоНельзяПоменятьЗначениеПриОбращенииЧерезКлюч",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "collection.indexed_value_read_only",
+
+"Description": "Индексированное значение доступно только для чтения",
+
+"Output": ""
+
+},
+
+{
+
+"File": "fixed-map.os",
+
+"Line": 119,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоНесуществующийКлючНельзяПрочитать",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "Classified",
+
+"Code": "collection.key_not_found",
+
+"Description": "Значение, соответствующее ключу, не задано",
+
+"Output": ""
+
+},
+
+{
+
+"File": "fixed-map.os",
+
+"Line": 140,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоСуществующийКлючНельзяИзменить",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "Classified",
+
+"Code": "collection.indexed_value_read_only",
+
+"Description": "Индексированное значение доступно только для чтения",
+
+"Output": ""
+
+},
+
+{
+
+"File": "fixed-structure.os",
+
+"Line": 62,
+
+"TestMethod": "ТестДолжен_ПроверитьТипПараметровКонструктора",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "collection.invalid_constructor_argument",
+
+"Description": "В качестве параметра для конструктора можно передавать только Структура или Ключи и Значения",
+
+"Output": ""
+
+},
+
+{
+
+"File": "fixed-structure.os",
+
+"Line": 72,
+
+"TestMethod": "ТестДолжен_ПроверитьТипПараметровКонструктора",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "collection.invalid_constructor_argument",
+
+"Description": "В качестве параметра для конструктора можно передавать только Структура или Ключи и Значения",
+
+"Output": ""
+
+},
+
+{
+
+"File": "fixed-structure.os",
+
+"Line": 82,
+
+"TestMethod": "ТестДолжен_ПроверитьТипПараметровКонструктора",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "collection.invalid_constructor_argument",
+
+"Description": "В качестве параметра для конструктора можно передавать только Структура или Ключи и Значения",
+
+"Output": ""
+
+},
+
+{
+
+"File": "fixed-structure.os",
+
+"Line": 130,
+
+"TestMethod": "ТестДолжен_ПроверитьОтсутствиеМетодаВставить",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "object.method_not_found",
+
+"Description": "Метод объекта не обнаружен (Вставить)",
+
+"Output": ""
+
+},
+
+{
+
+"File": "fixed-structure.os",
+
+"Line": 147,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоНельзяПоменятьЗначениеПриОбращенииЧерезКлюч",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "object.property_not_writable",
+
+"Description": "Свойство 'Ключ1' недоступно для записи",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 238,
+
+"TestMethod": "ТестДолжен_Проверить_ЗаполнитьЗначениеСвойств_НесуществующееСвойство",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "object.property_not_found",
+
+"Description": "Свойство объекта не обнаружено (НетТакогоСвойства)",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 253,
+"TestMethod": "ТестДолжен_Проверить_ЗаполнитьЗначениеСвойств_НесуществующееСвойствоПриУказанномИсключении",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "object.property_not_found",
+
+"Description": "Свойство объекта не обнаружено (НетТакогоСвойства)",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 290,
+
+"TestMethod": "ТестДолжен_Проверить_ЗаполнитьЗначениеСвойств_НеверныйТипСвойстваДляЗаполнения",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_type",
+
+"Description": "Неверный тип аргумента номер 3 'filledProperties'",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 302,
+
+"TestMethod": "ТестДолжен_Проверить_ЗаполнитьЗначениеСвойств_НеверныйТипСвойстваИсключения",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_type",
+
+"Description": "Неверный тип аргумента номер 4 'ignoredProperties'",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 411,
+
+"TestMethod": "ТестДолжен_Проверить_XMLЗначениеNULL",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_value",
+
+"Description": "Неверное значение аргумента номер 2",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 439,
+
+"TestMethod": "ТестДолжен_Проверить_XMLЗначениеGUID",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_value",
+
+"Description": "Неверное значение аргумента номер 2",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 469,
+
+"TestMethod": "ТестДолжен_Проверить_XMLСтрокаНедопустимыеТипы",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_value",
+
+"Description": "Неверное значение аргумента",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 479,
+
+"TestMethod": "ТестДолжен_Проверить_XMLСтрокаНедопустимыеТипы",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_value",
+
+"Description": "Неверное значение аргумента",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 492,
+
+"TestMethod": "ТестДолжен_Проверить_XMLЗначениеНедопустимыеТипы",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_type",
+
+"Description": "Неверный тип аргумента номер 1",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 502,
+
+"TestMethod": "ТестДолжен_Проверить_XMLЗначениеНедопустимыеТипы",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_value",
+
+"Description": "Неверное значение аргумента номер 2",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 543,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтениеИзBase64",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 634,
+
+"TestMethod": "Тест_ДолженПроверитьЧтоФункцияМинНеСравниваетРазнотипныеЗначения",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "Classified",
+
+"Code": "comparison.not_supported",
+
+"Description": "Сравнение на больше/меньше типов 'Строка' и 'Неопределено' не поддерживается",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 650,
+
+"TestMethod": "Тест_ДолженПроверитьЧтоФункцияМаксНеСравниваетРазнотипныеЗначения",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "Classified",
+
+"Code": "comparison.not_supported",
+
+"Description": "Сравнение на больше/меньше типов 'Строка' и 'Неопределено' не поддерживается",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 670,
+
+"TestMethod": "Тест_ДолженПроверитьЧтоКопированиеФайлаРаботаетПоHTTP",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 688,
+
+"TestMethod": "Тест_ДолженПроверитьЧтоКопированиеФайлаРаботаетПоHTTPS",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 704,
+
+"TestMethod": "Тест_ДолженПроверитьЧтоПеремещениеФайлаРаботаетПоHTTP",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "Classified",
+
+"Code": "http.method_not_allowed",
+
+"Description": "Внешнее исключение (System.Net.WebException): The remote server returned an error: (405) METHOD NOT ALLOWED.",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 725,
+
+"TestMethod": "Тест_ДолженПроверитьЧтоКопированиеФайлаПоОтносительномуПутиРаботаетКорректно",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 733,
+
+"TestMethod": "Тест_ДолженПроверитьЧтоКопированиеФайлаПоОтносительномуПутиРаботаетКорректно",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 751,
+
+"TestMethod": "Тест_ДолженПроверитьЧтоПеремещениеФайлаПоОтносительномуПутиРаботаетКорректно",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 759,
+
+"TestMethod": "Тест_ДолженПроверитьЧтоПеремещениеФайлаПоОтносительномуПутиРаботаетКорректно",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 794,
+
+"TestMethod": "Тест_ДолженПроверитьЧтоКопированиеФайлаПерезаписываетПриемник",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 813,
+
+"TestMethod": "Тест_ДолженПроверитьЧтоКопированиеФайлаПерезаписываетПриемник",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 850,
+
+"TestMethod": "Тест_ДолженПроверитьОписаниеОшибки",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "тест-тест-тест",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 868,
+
+"TestMethod": "Тест_ДолженПроверитьИнформацияОбОшибкеОписание",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "тест-тест-тест",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 881,
+
+"TestMethod": "Тест_ДолженПроверитьКраткоеПредставлениеОшибки",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "тест-тест-тест",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 893,
+
+"TestMethod": "Тест_ДолженПроверитьПодробноеПредставлениеОшибки",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "тест-тест-тест",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 910,
+
+"TestMethod": "Тест_ДолженПроверитьИнформацияОбОшибкеСПричиной",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "тест-тест-тест",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 920,
+
+"TestMethod": "Тест_ДолженПроверитьИнформацияОбОшибкеСПричиной",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "Я новая ошибка",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 954,
+
+"TestMethod": "Тест_ДолженПроверитьИнформацияОбОшибкеПробрасываетсяПриВызовеИсключения",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "тест-тест-тест",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-funcs.os",
+
+"Line": 962,
+
+"TestMethod": "Тест_ДолженПроверитьИнформацияОбОшибкеПробрасываетсяПриВызовеИсключения",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "тест-тест-тест",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-json.os",
+
+"Line": 234,
+
+"TestMethod": "Тест_ДолженВызватьОшибку_ДляUndefined",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "json.invalid_syntax",
+
+"Description": "Непредвиденный символ при чтении JSON",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-json.os",
+
+"Line": 244,
+
+"TestMethod": "Тест_ДолженВызватьОшибку_ПриНезакрытомМассиве",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "json.invalid_syntax",
+
+"Description": "Недопустимое состояние потока чтения JSON в строке 1 позиции 12",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-json.os",
+
+"Line": 254,
+
+"TestMethod": "Тест_ДолженВызватьОшибку_ПриНезакрытомОбъекте",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "json.invalid_syntax",
+
+"Description": "Недопустимое состояние потока чтения JSON в строке 1 позиции 10",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-json.os",
+
+"Line": 264,
+
+"TestMethod": "Тест_ДолженВызватьОшибку_ПриНезакрытомВложенномМассиве",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "json.invalid_syntax",
+
+"Description": "Недопустимое состояние потока чтения JSON в строке 1 позиции 16 (JsonToken EndObject is not valid for closing JsonType Array. Path 'aбв', line 1, position 16.)",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-json.os",
+
+"Line": 274,
+
+"TestMethod": "Тест_ДолженВызватьОшибку_ПриНезакрытомВложенномОбъекте",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "json.invalid_syntax",
+
+"Description": "Недопустимое состояние потока чтения JSON в строке 1 позиции 12 (JsonToken EndArray is not valid for closing JsonType Object. Path '[0]', line 1, position 12.)",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-json.os",
+
+"Line": 284,
+
+"TestMethod": "Тест_ДолженВызватьОшибку_ПриПропущенномЗначенииСвойства",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "json.invalid_syntax",
+
+"Description": "Недопустимое состояние потока чтения JSON в строке 1 позиции 7 (Unexpected character encountered while parsing value: }. Path 'aбв', line 1, position 7.)",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-json.os",
+
+"Line": 294,
+
+"TestMethod": "Тест_ДолженВызватьОшибку_ПриНезакрытомКомментарии",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "json.invalid_syntax",
+
+"Description": "Недопустимое состояние потока чтения JSON в строке 1 позиции 12 (Unexpected end while parsing comment. Path '[1]', line 1, position 12.)",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-json.os",
+
+"Line": 304,
+
+"TestMethod": "Тест_ДолженВызватьОшибку_ПриНедопустимомКлючеСтруктуры",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "object.invalid_property_name",
+
+"Description": "Задано неправильное имя атрибута структуры '123'",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-json.os",
+
+"Line": 320,
+
+"TestMethod": "Тест_ДолженВызватьОшибку_ПриПустомЗначенииВнутриМассива",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "json.invalid_syntax",
+
+"Description": "Непредвиденный символ при чтении JSON",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-json.os",
+
+"Line": 330,
+
+"TestMethod": "Тест_ДолженВызватьОшибку_ПриПустомЗначенииВКонцеМассива",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "json.invalid_syntax",
+
+"Description": "Непредвиденный символ при чтении JSON",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-json.os",
+
+"Line": 340,
+
+"TestMethod": "Тест_ДолженВызватьОшибку_ПриПустомЗначенииСвойства",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "json.invalid_syntax",
+
+"Description": "Непредвиденный символ при чтении JSON",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-new.os",
+
+"Line": 84,
+
+"TestMethod": "ТестДолжен_ПроверитьОшибочноеПодключениеТогоЖеИмениТипа",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "type.already_registered",
+
+"Description": "Type «ПерваяРегистрация» already registered",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-new.os",
+
+"Line": 102,
+
+"TestMethod": "ТестДолжен_ПроверитьСозданиеОбъектаПоПараметруИмениКласса",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "type.constructor_not_found",
+
+"Description": "Тип не определен. Конструктор не найден (ИмяКласса)",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-new.os",
+
+"Line": 143,
+
+"TestMethod": "ТестДолжен_ПроверитьПробросИсключенияИзЗагруженногоСценария",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "fail.os",
+
+"Output": ""
+
+},
+
+{
+
+"File": "global-new.os",
+
+"Line": 155,
+
+"TestMethod": "ТестДолжен_ПроверитьПробросИсключенияИзОбъектаБиблиотеки",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "fail-class.os",
+
+"Output": ""
+
+},
+
+{
+
+"File": "goto.os",
+
+"Line": 91,
+
+"TestMethod": "ТестДолжен_ПроверитьВыходИзПопытки",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NotObserved",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "http.os",
+
+"Line": 262,
+
+"TestMethod": "ТестДолженПроверитьЧтоКонструкторЗапросаВозвращаетКорректноеИсключение",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_type",
+
+"Description": "Неверный тип аргумента",
+
+"Output": ""
+
+},
+
+{
+
+"File": "http.os",
+
+"Line": 577,
+
+"TestMethod": "ПроверитьДоступность",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "network.connection_refused",
+
+"Description": "Внешнее исключение (System.Net.WebException): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. [::ffff:127.0.0.1]:8085 (127.0.0.1:8085)",
+
+"Output": ""
+
+},
+
+{
+
+"File": "json/test-json_date.os",
+
+"Line": 257,
+
+"TestMethod": "Тест_ДолженВызватьИсключениеЕслиДатаИмеетНеверныйТип",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_type",
+
+"Description": "Неверный тип аргумента номер 1",
+
+"Output": ""
+
+},
+
+{
+
+"File": "json/test-json_date.os",
+
+"Line": 280,
+
+"TestMethod": "Тест_ДолженВызватьИсключениеЕслиФорматИмеетНеверныйТип",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_type",
+
+"Description": "Неверный тип аргумента",
+
+"Output": ""
+
+},
+
+{
+
+"File": "json/test-json_date.os",
+
+"Line": 303,
+
+"TestMethod": "Тест_ДолженВызватьИсключениеЕслиВариантЗаписиИмеетНеверныйТип",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_type",
+
+"Description": "Неверный тип аргумента",
+
+"Output": ""
+
+},
+
+{
+
+"File": "json/test-json_date.os",
+
+"Line": 424,
+
+"TestMethod": "ОписаниеИсключенияЗаписиДатыJSON",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "json.local_date_not_supported",
+
+"Description": "Невозможно сохранить локальную дату в формате JavaScript",
+
+"Output": ""
+
+},
+
+{
+
+"File": "json/test-json_reader.os",
+
+"Line": 158,
+
+"TestMethod": "Тест_ДолженВызватьОшибку_ДляUndefined",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "json.invalid_syntax",
+
+"Description": "Непредвиденный символ при чтении JSON",
+
+"Output": ""
+
+},
+
+{
+
+"File": "json/test-json_writer.os",
+
+"Line": 266,
+
+"TestMethod": "Тест_Должен_ПроверитьСохранениеУстановленнойСтроки",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "filesystem.not_found",
+
+"Description": "Could not find a part of the path '<Temp>\\<temporary>'.",
+
+"Output": ""
+
+},
+
+{
+
+"File": "json/test-json_writer.os",
+
+"Line": 281,
+
+"TestMethod": "ПопыткаЗаписатьЗначение",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "json.unsupported_value_type",
+
+"Description": "Запись значения типа OneScript.StandardLibrary.Collections.ArrayImpl не поддерживается",
+
+"Output": ""
+
+},
+
+{
+
+"File": "json/test-json_writer.os",
+
+"Line": 338,
+
+"TestMethod": "Тест_Должен_ПроверитьИсключениеНаПотокеТолькоДляЧтения",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "stream.not_writable",
+
+"Description": "Попытка записи в поток не поддерживающий запись",
+
+"Output": ""
+
+},
+
+{
+
+"File": "managed-com.os",
+
+"Line": 46,
+
+"TestMethod": "ТестДолжен_ПроверитьВызовСОпциональнымиПараметрами",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "Внешнее исключение (System.Runtime.InteropServices.COMException): [Microsoft][Диспетчер драйверов ODBC] Источник данных не найден и не указан драйвер, используемый по умолчанию",
+
+"Output": ""
+
+},
+
+{
+
+"File": "native-api.os",
+
+"Line": 199,
+
+"TestMethod": "ТестДолжен_ПроверитьСвойстваВнешнейКомпоненты",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "object.property_not_writable",
+
+"Description": "Свойство 'StringRO' недоступно для записи",
+
+"Output": ""
+
+},
+
+{
+
+"File": "native-api.os",
+
+"Line": 206,
+
+"TestMethod": "ТестДолжен_ПроверитьСвойстваВнешнейКомпоненты",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "object.property_not_readable",
+
+"Description": "Свойство 'StringWO' недоступно для чтения",
+
+"Output": ""
+
+},
+
+{
+
+"File": "native-api.os",
+
+"Line": 213,
+
+"TestMethod": "ТестДолжен_ПроверитьСвойстваВнешнейКомпоненты",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "object.property_not_found",
+
+"Description": "Свойство объекта не обнаружено (СвойствоОтсутствует)",
+
+"Output": ""
+
+},
+
+{
+
+"File": "native-api.os",
+
+"Line": 237,
+
+"TestMethod": "ТестДолжен_ПроверитьМетодыВнешнейКомпоненты",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "call.too_many_arguments",
+
+"Description": "Слишком много фактических параметров",
+
+"Output": ""
+
+},
+
+{
+
+"File": "native-api.os",
+
+"Line": 247,
+
+"TestMethod": "ТестДолжен_ПроверитьМетодыВнешнейКомпоненты",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "call.too_many_arguments",
+
+"Description": "Слишком много фактических параметров",
+
+"Output": ""
+
+},
+
+{
+
+"File": "native-api.os",
+
+"Line": 312,
+
+"TestMethod": "ТестДолжен_ПроверитьОбменПараметров",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "object.property_not_writable",
+
+"Description": "Свойство 'StringRO' недоступно для записи",
+
+"Output": ""
+
+},
+
+{
+
+"File": "native-api.os",
+
+"Line": 426,
+
+"TestMethod": "ТестДолжен_ПроверитьОбменДатойVTYPE_TM",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "Тест провален. Ожидалось исключение для некорректного VTYPE_DATE",
+
+"Output": ""
+
+},
+
+{
+
+"File": "native-api.os",
+
+"Line": 435,
+
+"TestMethod": "ТестДолжен_ПроверитьОбменДатойVTYPE_TM",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "Тест провален. Ожидалось исключение для некорректного VTYPE_TM",
+
+"Output": ""
+
+},
+
+{
+
+"File": "native-api.os",
+
+"Line": 461,
+
+"TestMethod": "ТестДолжен_ВыдержатьСборкуМусораПриКолбэкеОшибки",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "native-api.os",
+
+"Line": 480,
+
+"TestMethod": "ТестДолжен_ОтклонитьПрямойАлиас",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "external_component.object_creation_failed",
+
+"Description": "Не удалось создать объект `DirectAlias` внешней компоненты `AddinNativeDLL`. Доступны: CAddInNative, SecondAddIn",
+
+"Output": ""
+
+},
+
+{
+
+"File": "native-api.os",
+
+"Line": 498,
+
+"TestMethod": "ТестДолжен_ОтклонитьНесуществующийКласс",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "external_component.object_creation_failed",
+
+"Description": "Не удалось создать объект `ЗаведомоНетТакого` внешней компоненты `AddinNativeDLL`. Доступны: CAddInNative, SecondAddIn",
+
+"Output": ""
+
+},
+
+{
+
+"File": "native-api.os",
+
+"Line": 576,
+
+"TestMethod": "ТестДолжен_ОтклонитьКлючФабрикиGetClassNames",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "external_component.object_creation_failed",
+
+"Description": "Не удалось создать объект `2` внешней компоненты `AddinNativeDLL`. Доступны: CAddInNative, SecondAddIn",
+
+"Output": ""
+
+},
+
+{
+
+"File": "native-api.os",
+
+"Line": 658,
+
+"TestMethod": "ТестДолжен_ОтклонитьНеподключённуюМетку",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "type.constructor_not_found",
+
+"Description": "Тип не определен. Конструктор не найден (AddIn.НетТакойМетки.Класс)",
+
+"Output": ""
+
+},
+
+{
+
+"File": "native-lib/test-native-use.os",
+
+"Line": 66,
+
+"TestMethod": "ТестДолжен_ПроверитьВызовМетодовСОшибочноПропущеннымиПараметрами",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "call.too_few_arguments",
+
+"Description": "Пропущен обязательный параметр",
+
+"Output": ""
+
+},
+
+{
+
+"File": "native-lib/test-native-use.os",
+
+"Line": 82,
+
+"TestMethod": "ТестДолжен_ПроверитьВызовМетодовСЛишнимиПараметрами",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "call.too_many_arguments",
+
+"Description": "Слишком много фактических параметров",
+
+"Output": ""
+
+},
+
+{
+
+"File": "null-character-handling.os",
+
+"Line": 27,
+
+"TestMethod": "ТестДолжен_СоздатьФайлСНулевымСимволом",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "null-character-handling.os",
+
+"Line": 55,
+
+"TestMethod": "ТестДолжен_ВыполнитьНайтиФайлыСНулевымСимволом",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "null-character-handling.os",
+
+"Line": 82,
+
+"TestMethod": "ТестДолжен_ПолучитьСвойстваФайлаСНулевымСимволом",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "random.os",
+
+"Line": 35,
+
+"TestMethod": "ТестДолжен_СоздатьГенератор",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "random.os",
+
+"Line": 58,
+
+"TestMethod": "ТестДолжен_ПроверитьДоступныеГраницы",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_value",
+
+"Description": "Неверное значение аргумента",
+
+"Output": ""
+
+},
+
+{
+
+"File": "reflector.os",
+
+"Line": 276,
+
+"TestMethod": "ТестДолжен_ПроверитьМетод_ПолучитьТаблицуМетодов_ДляРазныхТипов",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "reflector.os",
+
+"Line": 331,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоПараметрыИзмененныеВПроцедуреВозвращеныВМассивПриИсключении",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Unclassified",
+
+"Code": "Неопределено",
+
+"Description": "!",
+
+"Output": ""
+
+},
+
+{
+
+"File": "reflector.os",
+
+"Line": 433,
+
+"TestMethod": "ТестДолжен_ПроверитьВызовМетодаСПараметрамиПоУмолчанию",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "call.too_many_arguments",
+
+"Description": "Слишком много фактических параметров",
+
+"Output": ""
+
+},
+
+{
+
+"File": "reflector.os",
+
+"Line": 447,
+
+"TestMethod": "ТестДолжен_ПроверитьВызовМетодаСПараметрамиПоУмолчанию",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "call.too_few_arguments",
+
+"Description": "Недостаточно фактических параметров",
+
+"Output": ""
+
+},
+
+{
+
+"File": "reflector.os",
+
+"Line": 470,
+
+"TestMethod": "ТестДолжен_ПроверитьВызовМетодаБезПараметровПоУмолчанию",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "call.too_few_arguments",
+
+"Description": "Недостаточно фактических параметров",
+
+"Output": ""
+
+},
+
+{
+
+"File": "source-licensing.os",
+
+"Line": 96,
+
+"TestMethod": "ПроверитьФайл",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "stringoperations.os",
+
+"Line": 97,
+
+"TestMethod": "ТестДолжен_ВызватьМетод_СтрНачинаетсяС_СПустойСтрокойПоиска",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_value",
+
+"Description": "Ошибка при вызове метода контекста (СтрНачинаетсяС): Недопустимое значение параметра номер '2'",
+
+"Output": ""
+
+},
+
+{
+
+"File": "stringoperations.os",
+
+"Line": 147,
+
+"TestMethod": "ТестДолжен_ВызватьМетод_СтрЗаканчиваетсяНа_СПустойСтрокойПоиска",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_value",
+
+"Description": "Ошибка при вызове метода контекста (СтрЗаканчиваетсяНа): Недопустимое значение параметра номер '2'",
+
+"Output": ""
+
+},
+
+{
+
+"File": "stringoperations.os",
+
+"Line": 212,
+
+"TestMethod": "ТестДолжен_ВызватьМетод_СтрРазделить_СПустойСтрокойРазделителя",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "stringoperations.os",
+
+"Line": 249,
+
+"TestMethod": "ТестДолжен_ВызватьМетод_СтрРазделить_ПараметрыНеЗаданы",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "stringoperations.os",
+
+"Line": 266,
+
+"TestMethod": "ТестДолжен_ВызватьМетод_СтрШаблон_ИсключениеПриПустомЗнакеПроцента",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "string.template_invalid_syntax",
+
+"Description": "Ошибка синтаксиса шаблона в позиции 7",
+
+"Output": ""
+
+},
+
+{
+
+"File": "stringoperations.os",
+
+"Line": 279,
+
+"TestMethod": "ТестДолжен_ВызватьМетод_СтрШаблон_ИсключениеПриНомере0",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "string.template_invalid_syntax",
+
+"Description": "Ошибка синтаксиса шаблона в позиции 7. Недопустимый номер подстановки: '0'",
+
+"Output": ""
+
+},
+
+{
+
+"File": "stringoperations.os",
+
+"Line": 292,
+
+"TestMethod": "ТестДолжен_ВызватьМетод_СтрШаблон_ИсключениеПриНомереБольше10",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "string.template_invalid_syntax",
+
+"Description": "Ошибка синтаксиса шаблона в позиции 7. Недопустимый номер подстановки: '11'",
+
+"Output": ""
+
+},
+
+{
+
+"File": "stringoperations.os",
+
+"Line": 349,
+
+"TestMethod": "ТестДолжен_ВызватьМетод_СтрШаблон_ИсключениеПриЛишнихПараметрах",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "call.too_many_arguments",
+
+"Description": "Слишком много фактических параметров",
+
+"Output": ""
+
+},
+
+{
+
+"File": "stringoperations.os",
+
+"Line": 365,
+
+"TestMethod": "ТестДолжен_ВызватьМетод_СтрШаблон_СНомеромВСкобках",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "string.template_invalid_syntax",
+
+"Description": "Ошибка синтаксиса шаблона в позиции 7. Недопустимый номер подстановки: '11'",
+
+"Output": ""
+
+},
+
+{
+
+"File": "stringoperations.os",
+
+"Line": 381,
+
+"TestMethod": "ТестДолжен_ВызватьМетод_СтрШаблон_СПустымШаблоном",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "call.too_many_arguments",
+
+"Description": "Слишком много фактических параметров",
+
+"Output": ""
+
+},
+
+{
+
+"File": "stringoperations.os",
+
+"Line": 496,
+
+"TestMethod": "ТестДолжен_ВызватьМетод_СтрНайти_СНевернойНачальнойПозицией",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_value",
+
+"Description": "Неверное значение аргумента номер 4",
+
+"Output": ""
+
+},
+
+{
+
+"File": "stringoperations.os",
+
+"Line": 512,
+
+"TestMethod": "ТестДолжен_ВызватьМетод_СтрНайти_СНулевымЧисломВхождений",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_value",
+
+"Description": "Неверное значение аргумента номер 5",
+
+"Output": ""
+
+},
+
+{
+
+"File": "structure.os",
+
+"Line": 51,
+
+"TestMethod": "ТестДолжен_СоздатьСтруктуруПоКлючамЗначениям_ПроверкаПравильностиКлючей",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "object.invalid_property_name",
+
+"Description": "Задано неправильное имя атрибута структуры '1йКлюч'",
+
+"Output": ""
+
+},
+
+{
+
+"File": "structure.os",
+
+"Line": 64,
+
+"TestMethod": "ТестДолжен_ПроверитьТипПараметровКонструктора",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "collection.invalid_constructor_argument",
+
+"Description": "В качестве параметра для конструктора можно передавать только ФиксированнаяСтруктура или Ключи и Значения",
+
+"Output": ""
+
+},
+
+{
+
+"File": "structure.os",
+
+"Line": 74,
+
+"TestMethod": "ТестДолжен_ПроверитьТипПараметровКонструктора",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "collection.invalid_constructor_argument",
+
+"Description": "В качестве параметра для конструктора можно передавать только ФиксированнаяСтруктура или Ключи и Значения",
+
+"Output": ""
+
+},
+
+{
+
+"File": "structure.os",
+
+"Line": 84,
+
+"TestMethod": "ТестДолжен_ПроверитьТипПараметровКонструктора",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "collection.invalid_constructor_argument",
+
+"Description": "В качестве параметра для конструктора можно передавать только ФиксированнаяСтруктура или Ключи и Значения",
+
+"Output": ""
+
+},
+
+{
+
+"File": "symbols.os",
+
+"Line": 18,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоСимволыLFНеПадает",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "symbols.os",
+
+"Line": 26,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоСимволыПСНеПадает",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "symbols.os",
+
+"Line": 34,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоCharsLFНеПадает",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "symbols.os",
+
+"Line": 42,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоCharsПСНеПадает",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "tasks.os",
+
+"Line": 128,
+
+"TestMethod": "ТестДолжен_ЗапретитьСоздаватьМенеджерФоновыхЗаданий",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "tasks.os",
+
+"Line": 258,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоРаботаетБлокировка",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "tasks.os",
+
+"Line": 404,
+
+"TestMethod": "ТестДолжен_ПроверитьОсвобождениеДанныхПотокаИсполнения",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "stream.closed",
+
+"Description": "Внешнее исключение (System.ObjectDisposedException): Cannot access a closed file.",
+
+"Output": ""
+
+},
+
+{
+
+"File": "tasks.os",
+
+"Line": 530,
+
+"TestMethod": "ТестДолжен_ОсвободитьОстальныеДанныеПриОшибкеОсвобождения",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "tasks.os",
+
+"Line": 541,
+
+"TestMethod": "ТестДолжен_ОсвободитьОстальныеДанныеПриОшибкеОсвобождения",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "stream.closed",
+
+"Description": "Внешнее исключение (System.ObjectDisposedException): Cannot access a closed file.",
+
+"Output": ""
+
+},
+
+{
+
+"File": "tasks.os",
+
+"Line": 597,
+
+"TestMethod": "ТестДолжен_ОсвободитьДанныеПотокаОсновногоСкрипта",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "text-read.os",
+
+"Line": 265,
+
+"TestMethod": "УдалосьОткрытьИПрочитать",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "filesystem.resource_busy",
+
+"Description": "Внешнее исключение (System.IO.IOException): The process cannot access the file '<Temp>\\<temporary>' because it is being used by another process.",
+
+"Output": ""
+
+},
+
+{
+
+"File": "text-read.os",
+
+"Line": 290,
+
+"TestMethod": "УдалосьОткрытьИПрочитать",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "filesystem.resource_busy",
+
+"Description": "Внешнее исключение (System.IO.IOException): The process cannot access the file '<Temp>\\<temporary>' because it is being used by another process.",
+
+"Output": ""
+
+},
+
+{
+
+"File": "text-write.os",
+
+"Line": 51,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоВозможнаЗаписьUTF8БезBOMСтандартно",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "text-write.os",
+
+"Line": 73,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоВозможнаЗаписьUTF8БезBOMСтандартноСПеречислениемКодировкаТекста",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "text-write.os",
+
+"Line": 93,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоВозможнаЗаписьUTF8БезBOMСПеречислениемКодировкаТекста",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "text-write.os",
+
+"Line": 109,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоНеоткрытыйФайлБросаетПравильноеИсключениеВМетодеЗаписать",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "text.not_open",
+
+"Description": "Файл не открыт",
+
+"Output": ""
+
+},
+
+{
+
+"File": "text-write.os",
+
+"Line": 124,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоНеоткрытыйФайлБросаетПравильноеИсключениеВМетодеЗаписатьСтроку",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "text.not_open",
+
+"Description": "Файл не открыт",
+
+"Output": ""
+
+},
+
+{
+
+"File": "text-write.os",
+
+"Line": 141,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоРаботаетКонструкторПоИмениФайлаСНезаполненнымиНеобязательнымиПолями",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "text-write.os",
+
+"Line": 148,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоРаботаетКонструкторПоИмениФайлаСНезаполненнымиНеобязательнымиПолями",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "text-write.os",
+
+"Line": 155,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоРаботаетКонструкторПоИмениФайлаСНезаполненнымиНеобязательнымиПолями",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "text-write.os",
+
+"Line": 176,
+
+"TestMethod": "ТестДолжен_ПроверитьЧтоЗаписьСтрокиВФайлПроисходитСразуБезКеширования",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "timezones.os",
+
+"Line": 70,
+
+"TestMethod": "ТестДолжен_ПроверитьКорректностьПолученияЧасовогоПоясаПоСтроке",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_value",
+
+"Description": "Неверное значение аргумента номер 1",
+
+"Output": ""
+
+},
+
+{
+
+"File": "timezones.os",
+
+"Line": 79,
+
+"TestMethod": "ТестДолжен_ПроверитьКорректностьПолученияЧасовогоПоясаПоСтроке",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_value",
+
+"Description": "Неверное значение аргумента номер 1",
+
+"Output": ""
+
+},
+
+{
+
+"File": "typedescription.os",
+
+"Line": 308,
+
+"TestMethod": "ТестДолжен_ПроверитьПередачуНеверныхПараметров",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "type.not_registered",
+
+"Description": "Тип не зарегистрирован (НеБулево)",
+
+"Output": ""
+
+},
+
+{
+
+"File": "typedescription.os",
+
+"Line": 318,
+
+"TestMethod": "ТестДолжен_ПроверитьПередачуНеверныхПараметров",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_type",
+
+"Description": "Неверный тип аргумента номер 2",
+
+"Output": ""
+
+},
+
+{
+
+"File": "typedescription.os",
+
+"Line": 326,
+
+"TestMethod": "ТестДолжен_ПроверитьПередачуНеверныхПараметров",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_type",
+
+"Description": "Неверный тип аргумента номер 3",
+
+"Output": ""
+
+},
+
+{
+
+"File": "typedescription.os",
+
+"Line": 334,
+
+"TestMethod": "ТестДолжен_ПроверитьПередачуНеверныхПараметров",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "type.not_registered",
+
+"Description": "Тип не зарегистрирован (НеБулево)",
+
+"Output": ""
+
+},
+
+{
+
+"File": "value-list.os",
+
+"Line": 116,
+
+"TestMethod": "ТестДолжен_ПроверитьДоступПоИндексу",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "collection.indexed_value_read_only",
+
+"Description": "Индексированное значение доступно только для чтения",
+
+"Output": ""
+
+},
+
+{
+
+"File": "value-list.os",
+
+"Line": 164,
+
+"TestMethod": "ТестДолжен_ПроверитьМетодВставитьСпискаЗначений",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "collection.index_out_of_range",
+
+"Description": "Значение индекса выходит за пределы диапазона",
+
+"Output": ""
+
+},
+
+{
+
+"File": "value-list.os",
+
+"Line": 181,
+
+"TestMethod": "ТестДолжен_ПроверитьОшибкуМетодаПолучитьСпискаЗначений",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "collection.index_out_of_range",
+
+"Description": "Значение индекса выходит за пределы диапазона",
+
+"Output": ""
+
+},
+
+{
+
+"File": "value-list.os",
+
+"Line": 219,
+
+"TestMethod": "ТестДолжен_ПроверитьМетодУдалитьСпискаЗначений",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "collection.index_out_of_range",
+
+"Description": "Значение индекса выходит за пределы диапазона",
+
+"Output": ""
+
+},
+
+{
+
+"File": "value-list.os",
+
+"Line": 229,
+
+"TestMethod": "ТестДолжен_ПроверитьМетодУдалитьСпискаЗначений",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "collection.element_not_member",
+
+"Description": "Элемент не принадлежит списку значений",
+
+"Output": ""
+
+},
+
+{
+
+"File": "value-list.os",
+
+"Line": 237,
+
+"TestMethod": "ТестДолжен_ПроверитьМетодУдалитьСпискаЗначений",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_type",
+
+"Description": "Неверный тип аргумента",
+
+"Output": ""
+
+},
+
+{
+
+"File": "value-list.os",
+
+"Line": 324,
+
+"TestMethod": "ТестДолжен_ПроверитьМетодСдвинутьСпискаЗначений",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_value",
+
+"Description": "Неверное значение аргумента номер 2",
+
+"Output": ""
+
+},
+
+{
+
+"File": "value-list.os",
+
+"Line": 332,
+
+"TestMethod": "ТестДолжен_ПроверитьМетодСдвинутьСпискаЗначений",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_value",
+
+"Description": "Неверное значение аргумента номер 2",
+
+"Output": ""
+
+},
+
+{
+
+"File": "value-list.os",
+
+"Line": 340,
+
+"TestMethod": "ТестДолжен_ПроверитьМетодСдвинутьСпискаЗначений",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "collection.index_out_of_range",
+
+"Description": "Значение индекса выходит за пределы диапазона",
+
+"Output": ""
+
+},
+
+{
+
+"File": "value-list.os",
+
+"Line": 350,
+
+"TestMethod": "ТестДолжен_ПроверитьМетодСдвинутьСпискаЗначений",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "collection.element_not_member",
+
+"Description": "Элемент не принадлежит списку значений",
+
+"Output": ""
+
+},
+
+{
+
+"File": "value-list.os",
+
+"Line": 358,
+
+"TestMethod": "ТестДолжен_ПроверитьМетодСдвинутьСпискаЗначений",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_type",
+
+"Description": "Неверный тип аргумента",
+
+"Output": ""
+
+},
+
+{
+
+"File": "valuetable.os",
+
+"Line": 145,
+
+"TestMethod": "ТестДолжен_СоздатьУдалитьКолонки",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "valuetable.os",
+
+"Line": 172,
+
+"TestMethod": "ТестДолжен_СоздатьУдалитьКолонки",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "object.property_not_found",
+
+"Description": "Свойство объекта не обнаружено (К1)",
+
+"Output": ""
+
+},
+
+{
+
+"File": "valuetable.os",
+
+"Line": 304,
+
+"TestMethod": "ТестДолжен_ПереместитьСтроки",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "table.invalid_offset",
+
+"Description": "Неправильное смещение внутри коллекции",
+
+"Output": ""
+
+},
+
+{
+
+"File": "valuetable.os",
+
+"Line": 312,
+
+"TestMethod": "ТестДолжен_ПереместитьСтроки",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "table.invalid_offset",
+
+"Description": "Неправильное смещение внутри коллекции",
+
+"Output": ""
+
+},
+
+{
+
+"File": "valuetable.os",
+
+"Line": 320,
+
+"TestMethod": "ТестДолжен_ПереместитьСтроки",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "collection.index_out_of_range",
+
+"Description": "Значение индекса выходит за пределы диапазона",
+
+"Output": ""
+
+},
+
+{
+
+"File": "valuetable.os",
+
+"Line": 331,
+
+"TestMethod": "ТестДолжен_ПереместитьСтроки",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "collection.element_not_member",
+
+"Description": "Строка не принадлежит таблице значений",
+
+"Output": ""
+
+},
+
+{
+
+"File": "valuetable.os",
+
+"Line": 339,
+
+"TestMethod": "ТестДолжен_ПереместитьСтроки",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_type",
+
+"Description": "Неверный тип аргумента",
+
+"Output": ""
+
+},
+
+{
+
+"File": "valuetable.os",
+
+"Line": 596,
+
+"TestMethod": "ТестДолжен_ПроверитьИсключениеПриКопированииТаблицыПоМассивуСтрок",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_value",
+
+"Description": "Неверное значение аргумента",
+
+"Output": ""
+
+},
+
+{
+
+"File": "valuetable.os",
+
+"Line": 1047,
+
+"TestMethod": "ТестДолжен_ПроверитьИсключениеПриЗагрузкеКолонки",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_type",
+
+"Description": "Неверный тип аргумента номер 1",
+
+"Output": ""
+
+},
+
+{
+
+"File": "valuetable.os",
+
+"Line": 1063,
+
+"TestMethod": "ТестДолжен_ПроверитьИсключениеПриНеверномПараметреСортировки",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_value",
+
+"Description": "Неверное значение аргумента номер 1",
+
+"Output": ""
+
+},
+
+{
+
+"File": "valuetable.os",
+
+"Line": 1202,
+
+"TestMethod": "ТестДолжен_ПроверитьИсключениеПриНеверномИмениКолонкиВОтборе",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "table.invalid_column_name",
+
+"Description": "Неверное имя колонки 'Тест2'",
+
+"Output": ""
+
+},
+
+{
+
+"File": "valuetable.os",
+
+"Line": 1228,
+
+"TestMethod": "ТестДолжен_ПроверитьЗапятуюВИменахКолонок_СПустыми",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "table.invalid_column_name",
+
+"Description": "Неверное имя колонки ' '",
+
+"Output": ""
+
+},
+
+{
+
+"File": "valuetable.os",
+
+"Line": 1242,
+
+"TestMethod": "ТестДолжен_ПроверитьИсключениеДляИндекса",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_type",
+
+"Description": "Неверный тип аргумента",
+
+"Output": ""
+
+},
+
+{
+
+"File": "valuetable.os",
+
+"Line": 1253,
+
+"TestMethod": "ТестДолжен_ВызватьИсключениеПриДобавленииКолонкиСНевернымИменем",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "table.invalid_column_name",
+
+"Description": "Неверное имя колонки '!@#'",
+
+"Output": ""
+
+},
+
+{
+
+"File": "valuetable.os",
+
+"Line": 1264,
+
+"TestMethod": "ТестДолжен_ВызватьИсключениеПриВставкеКолонкиСНевернымИменем",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "table.invalid_column_name",
+
+"Description": "Неверное имя колонки '!@#'",
+
+"Output": ""
+
+},
+
+{
+
+"File": "valuetable.os",
+
+"Line": 1275,
+
+"TestMethod": "ТестДолжен_ВызватьИсключениеНаПоискеИндексаКолонкиСНевернымПримитивнымТипом",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_type",
+
+"Description": "Неверный тип аргумента",
+
+"Output": ""
+
+},
+
+{
+
+"File": "valuetable.os",
+
+"Line": 1288,
+
+"TestMethod": "ТестДолжен_ВызватьИсключениеНаПоискеИндексаКолонкиСНевернымОбъектнымТипом",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_type",
+
+"Description": "Неверный тип аргумента",
+
+"Output": ""
+
+},
+
+{
+
+"File": "valuetable.os",
+
+"Line": 1305,
+
+"TestMethod": "ТестДолжен_ПроверитьИсключениеПолученияКолонкиСНевернымНомером",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "collection.index_out_of_range",
+
+"Description": "Значение индекса выходит за пределы диапазона",
+
+"Output": ""
+
+},
+
+{
+
+"File": "valuetable.os",
+
+"Line": 1315,
+
+"TestMethod": "ТестДолжен_ПроверитьИсключениеПолученияКолонкиСНевернымНомером",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "collection.index_out_of_range",
+
+"Description": "Значение индекса выходит за пределы диапазона",
+
+"Output": ""
+
+},
+
+{
+
+"File": "ValueTableIndex.os",
+
+"Line": 216,
+
+"TestMethod": "ТестДолжен_ПроверитьВыбросИсключений",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_value",
+
+"Description": "Неверное значение аргумента",
+
+"Output": ""
+
+},
+
+{
+
+"File": "ValueTableIndex.os",
+
+"Line": 224,
+
+"TestMethod": "ТестДолжен_ПроверитьВыбросИсключений",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_value",
+
+"Description": "Неверное значение аргумента",
+
+"Output": ""
+
+},
+
+{
+
+"File": "ValueTableIndex.os",
+
+"Line": 234,
+
+"TestMethod": "ТестДолжен_ПроверитьВыбросИсключений",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_value",
+
+"Description": "Неверное значение аргумента",
+
+"Output": ""
+
+},
+
+{
+
+"File": "ValueTableIndex.os",
+
+"Line": 242,
+
+"TestMethod": "ТестДолжен_ПроверитьВыбросИсключений",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_type",
+
+"Description": "Неверный тип аргумента",
+
+"Output": ""
+
+},
+
+{
+
+"File": "ValueTableIndex.os",
+
+"Line": 250,
+
+"TestMethod": "ТестДолжен_ПроверитьВыбросИсключений",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "table.invalid_column_name",
+
+"Description": "Неверное имя колонки 'НесуществующееПоле'",
+
+"Output": ""
+
+},
+
+{
+
+"File": "valuetree.os",
+
+"Line": 88,
+
+"TestMethod": "ТестДолжен_СоздатьУдалитьКолонки",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_value",
+
+"Description": "Неверное значение аргумента",
+
+"Output": ""
+
+},
+
+{
+
+"File": "valuetree.os",
+
+"Line": 130,
+
+"TestMethod": "ТестДолжен_СоздатьУдалитьКолонки",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "valuetree.os",
+
+"Line": 157,
+
+"TestMethod": "ТестДолжен_СоздатьУдалитьКолонки",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "object.property_not_found",
+
+"Description": "Свойство объекта не обнаружено (К4)",
+
+"Output": ""
+
+},
+
+{
+
+"File": "valuetree.os",
+
+"Line": 655,
+
+"TestMethod": "ТестДолжен_ПроверитьЗаписьПредопределенногоСвойства",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "object.property_not_writable",
+
+"Description": "Свойство 'Родитель' недоступно для записи",
+
+"Output": ""
+
+},
+
+{
+
+"File": "valuetree.os",
+
+"Line": 667,
+
+"TestMethod": "ТестДолжен_ПроверитьЗаписьПредопределенногоСвойства",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "object.property_not_writable",
+
+"Description": "Свойство 'Родитель' недоступно для записи",
+
+"Output": ""
+
+},
+
+{
+
+"File": "xmlwrite.os",
+
+"Line": 93,
+
+"TestMethod": "ТестДолжен_ЗаписатьВФайл",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "xmlwrite.os",
+
+"Line": 120,
+
+"TestMethod": "ПроверитьЗаписьВУТФ_СБОМ_БезБОМ",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "xmlwrite.os",
+
+"Line": 839,
+
+"TestMethod": "ТестДолжен_ПроверитьЗаписьТипаДокумента_4ПараметраСОшибкой",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "xml.system_id_missing",
+
+"Description": "Отсутствует системный идентификатор",
+
+"Output": ""
+
+},
+
+{
+
+"File": "xmlwrite.os",
+
+"Line": 858,
+
+"TestMethod": "ТестДолжен_ПроверитьЗаписьТипаДокумента_ОшибкаПослеНачала",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "xml.invalid_write_state",
+
+"Description": "Ошибочный порядок записи XML",
+
+"Output": ""
+
+},
+
+{
+
+"File": "xmlwrite.os",
+
+"Line": 876,
+
+"TestMethod": "ТестДолжен_ПроверитьЗаписьТипаДокумента_ОшибкаИмени",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "Classified",
+
+"Code": "argument.invalid_value",
+
+"Description": "Неверное значение аргумента номер 1",
+
+"Output": ""
+
+},
+
+{
+
+"File": "xslt/test-XSLTransform.os",
+
+"Line": 45,
+
+"TestMethod": "ТестДолжен_УстановитьСтилиИзСтроки",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "xslt/test-XSLTransform.os",
+
+"Line": 66,
+
+"TestMethod": "ТестДолжен_УстановитьСтилиИзФайла",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "xslt/test-XSLTransform.os",
+
+"Line": 87,
+
+"TestMethod": "ТестДолжен_ДобавитьПараметр",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "xslt/test-XSLTransform.os",
+
+"Line": 110,
+
+"TestMethod": "ТестДолжен_УдалитьПараметр",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "xslt/test-XSLTransform.os",
+
+"Line": 121,
+
+"TestMethod": "ТестДолжен_УдалитьПараметр",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "xslt/test-XSLTransform.os",
+
+"Line": 144,
+
+"TestMethod": "ТестДолжен_ВыполнитьПреобразованиеИзСтроки",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "xslt/test-XSLTransform.os",
+
+"Line": 154,
+
+"TestMethod": "ТестДолжен_ВыполнитьПреобразованиеИзСтроки",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "xslt/test-XSLTransform.os",
+
+"Line": 184,
+
+"TestMethod": "ТестДолжен_ВыполнитьПреобразованиеИзФайла",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "xslt/test-XSLTransform.os",
+
+"Line": 194,
+
+"TestMethod": "ТестДолжен_ВыполнитьПреобразованиеИзФайла",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "xslt/test-XSLTransform.os",
+
+"Line": 226,
+
+"TestMethod": "ТестДолжен_ВыполнитьПреобразованиеСПараметрами",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "xslt/test-XSLTransform.os",
+
+"Line": 236,
+
+"TestMethod": "ТестДолжен_ВыполнитьПреобразованиеСПараметрами",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "xslt/test-XSLTransform.os",
+
+"Line": 247,
+
+"TestMethod": "ТестДолжен_ВыполнитьПреобразованиеСПараметрами",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ОбработанноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "zip/test-zip.os",
+
+"Line": 106,
+
+"TestMethod": "ТестДолжен_ДобавитьВАрхивОдиночныйФайлБезПутей",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "zip/test-zip.os",
+
+"Line": 138,
+
+"TestMethod": "ТестДолжен_ДобавитьВАрхивОдиночныйСПолнымПутем",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "zip/test-zip.os",
+
+"Line": 174,
+
+"TestMethod": "ТестДолжен_ДобавитьВАрхивКаталогТестов",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "zip/test-zip.os",
+
+"Line": 221,
+
+"TestMethod": "ТестДолжен_ДобавитьВАрхивКаталогТестовПоМаске",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NoException",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+},
+
+{
+
+"File": "zip/test-zip.os",
+
+"Line": 718,
+
+"TestMethod": "ТестДолжен_ПроверитьСимволыЮникодаВИменахФайлов",
+
+"Source": "ПопыткаИсключение",
+
+"Observation": "ПроброшенноеИсключение",
+
+"Status": "NotObserved",
+
+"Code": "",
+
+"Description": "",
+
+"Output": ""
+
+}
+
+]
+
+}

@@ -1,0 +1,36 @@
+{
+  "Version": 2,
+  "Defaults": [],
+  "Reviewed": [
+    {
+      "CallerAssembly": "OneScript.StandardLibrary",
+      "CallerType": "aHelper",
+      "CallerMember": "Encode",
+      "Instruction": "callvirt",
+      "ExternalAssembly": "System.Private.CoreLib",
+      "ExternalType": "System.Text.Encoding",
+      "ExternalMember": "GetBytes",
+      "Resolved": true,
+      "Status": "Covered",
+      "Codes": ["encoding.invalid_argument", "encoding.invalid_data"],
+      "Evidence": ["tests/EncodingErrors.os"],
+      "Note": "The helper boundary has runtime evidence."
+    },
+    {
+      "CallerAssembly": "OneScript.StandardLibrary",
+      "CallerType": "MissingHelper",
+      "CallerMember": "Invoke",
+      "Instruction": "call",
+      "ExternalAssembly": "MissingDependency",
+      "ExternalType": "MissingBoundary",
+      "ExternalMember": "Invoke",
+      "Resolved": false,
+      "IlOffset": 10,
+      "MetadataToken": 167772161,
+      "Status": "Deferred",
+      "Codes": [],
+      "Evidence": ["probes/MissingDependency.md"],
+      "Note": "The unresolved call site is tracked separately."
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "SchemaVersion": 1,
+  "SourceDirectories": [],
+  "FileCount": 5,
+  "ExceptionCount": 6,
+  "CaughtExceptionCount": 0,
+  "CandidateCount": 2,
+  "OperationalCandidateCount": 1,
+  "ProgrammingErrorCount": 1,
+  "UnknownThrowCount": 4,
+  "Candidates": [
+    {
+      "File": "Engine\\FeatureB.cs",
+      "Line": 30,
+      "OneScriptObject": "ObjectB",
+      "OneScriptMethod": "MethodB",
+      "ExceptionType": "System.IO.IOException",
+      "Message": "Error B",
+      "Statement": "throw new System.IO.IOException(\"Error B\");",
+      "Disposition": "OperationalCandidate"
+    },
+    {
+      "File": "Engine\\FeatureC.cs",
+      "Line": 40,
+      "OneScriptObject": "ObjectC",
+      "OneScriptMethod": "MethodC",
+      "ExceptionType": "RuntimeException.InvalidArgumentValue",
+      "Message": "",
+      "Statement": "throw RuntimeException.InvalidArgumentValue();",
+      "Disposition": "ProgrammingError"
+    }
+  ],
+  "UnknownThrows": [
+    {
+      "File": "Engine\\OneScript.Core\\FeatureCore.cs",
+      "Line": 5,
+      "OneScriptObject": "ОбъектЯдра",
+      "OneScriptMethod": "МетодЯдра",
+      "ExceptionType": "RuntimeException",
+      "Message": "Ошибка ядра",
+      "Statement": "throw new RuntimeException(\"Ошибка ядра\");",
+      "Disposition": "Unknown"
+    },
+    {
+      "File": "Engine\\OneScript.StandardLibrary\\FeatureLibrary.cs",
+      "Line": 5,
+      "OneScriptObject": "ОбъектБиблиотеки",
+      "OneScriptMethod": "МетодБиблиотеки",
+      "ExceptionType": "RuntimeException",
+      "Message": "Ошибка библиотеки",
+      "Statement": "throw new RuntimeException(\"Ошибка библиотеки\");",
+      "Disposition": "Unknown"
+    },
+    {
+      "File": "Engine\\FeatureA.cs",
+      "Line": 10,
+      "OneScriptObject": "ОбъектA",
+      "OneScriptMethod": "МетодA",
+      "ExceptionType": "RuntimeException",
+      "Message": "Ошибка A",
+      "Statement": "throw new RuntimeException(\"Ошибка A\");",
+      "Disposition": "Unknown"
+    },
+    {
+      "File": "Engine\\FeatureA.cs",
+      "Line": 20,
+      "OneScriptObject": "ОбъектA",
+      "OneScriptMethod": "МетодБ",
+      "ExceptionType": "RuntimeException",
+      "Message": "Ошибка A",
+      "Statement": "throw new RuntimeException(\"Ошибка A\");",
+      "Disposition": "Unknown"
+    }
+  ],
+  "OperationalCandidates": [
+    {
+      "File": "Engine\\FeatureB.cs",
+      "Line": 30,
+      "OneScriptObject": "ОбъектБ",
+      "OneScriptMethod": "МетодВ",
+      "ExceptionType": "System.IO.IOException",
+      "Message": "Error B",
+      "Statement": "throw new System.IO.IOException(\"Error B\");",
+      "Disposition": "OperationalCandidate"
+    }
+  ],
+  "ProgrammingErrors": [
+    {
+      "File": "Engine\\FeatureC.cs",
+      "Line": 40,
+      "OneScriptObject": "ОбъектВ",
+      "OneScriptMethod": "МетодГ",
+      "ExceptionType": "RuntimeException.InvalidArgumentValue",
+      "Message": "",
+      "Statement": "throw RuntimeException.InvalidArgumentValue();",
+      "Disposition": "ProgrammingError"
+    }
+  ],
+  "CaughtExceptions": []
+}
