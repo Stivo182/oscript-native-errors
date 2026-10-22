@@ -2757,9 +2757,9 @@
                          "File":  "src/OneScript.StandardLibrary/XMLSchema/Objects/XMLSchema.cs",
                          "ExceptionType":  "RuntimeException",
                          "Statement":  "throw new RuntimeException(args.Message);",
-                         "Status":  "Implemented",
-                         "Code":  "xml.schema_duplicate_element_declaration",
-                         "Note":  "Подтвержден стабильный сценарий повторного объявления глобального элемента схемы XML; покрыт узким правилом и матричным тестом. Другие сообщения CLR по этому пути не обобщаются."
+                         "Status":  "Deferred",
+                         "Code":  "",
+                         "Note":  "Сценарий воспроизводится, но RuntimeException содержит только текст без нативного типа или другого машинного признака. Классификация отключена, чтобы исключить ложные срабатывания."
                      },
                      {
                          "File":  "src/OneScript.StandardLibrary/XMLSchema/Objects/XMLSchema.cs",

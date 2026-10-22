@@ -70,7 +70,7 @@
 			.СИдентификатором("filesystem.already_exists.file_path")
 			.КлассифицируетКак(
 				КодыНативныхОшибок.ФайловаяСистемаРесурсУжеСуществует(),
-				"ru = 'Файл уже существует'; en = 'File already exists'"
+				"ru = 'Файл или каталог уже существует'; en = 'File or directory already exists'"
 			)
 	);
 	Правила.Добавить(
@@ -94,7 +94,7 @@
 			.СИдентификатором("filesystem.already_exists.file_win32")
 			.КлассифицируетКак(
 				КодыНативныхОшибок.ФайловаяСистемаРесурсУжеСуществует(),
-				"ru = 'Файл уже существует'; en = 'File already exists'"
+				"ru = 'Файл или каталог уже существует'; en = 'File or directory already exists'"
 			)
 	);
 	Правила.Добавить(
@@ -672,6 +672,17 @@
 	);
 	Правила.Добавить(
 		Новый ПравилоКлассификацииОшибок()
+			.СНативнымТипом("System.ArgumentNullException")
+			.Содержит("Value cannot be null. (Parameter 'writer')")
+			.СПриоритетом(1)
+			.СИдентификатором("xml.writer_not_open.schema")
+			.КлассифицируетКак(
+				КодыНативныхОшибок.XMLЗаписьНеОткрыта(),
+				"ru = 'ЗаписьXML не открыта'; en = 'XMLWriter is not open'"
+			)
+	);
+	Правила.Добавить(
+		Новый ПравилоКлассификацииОшибок()
 			.СовпадаетС("ru = 'Ошибочный порядок записи XML'; en = 'Wrong order of XML record'")
 			.СИдентификатором("xml.invalid_write_state.write_order")
 			.КлассифицируетКак(
@@ -699,6 +710,15 @@
 	);
 	Правила.Добавить(
 		Новый ПравилоКлассификацииОшибок()
+			.СНативнымТипом("System.Xml.Xsl.XslTransformException")
+			.СИдентификатором("xsl.execution_failed.transform")
+			.КлассифицируетКак(
+				КодыНативныхОшибок.XSLВыполнениеПрервано(),
+				"ru = 'Выполнение преобразования XSL прервано'; en = 'XSL transformation execution was aborted'"
+			)
+	);
+	Правила.Добавить(
+		Новый ПравилоКлассификацииОшибок()
 			.СНативнымТипом("System.Xml.Xsl.XslLoadException")
 			.СИдентификатором("xsl.invalid_stylesheet.load")
 			.КлассифицируетКак(
@@ -706,18 +726,6 @@
 				"ru = 'Некорректная таблица стилей XSL'; en = 'Invalid XSL stylesheet'"
 			)
 	);
-	Правила.Добавить(
-		Новый ПравилоКлассификацииОшибок()
-			.НачинаетсяС("The global element '")
-			.ОканчиваетсяНа("' has already been declared.")
-			.СИдентификатором("xml.schema_duplicate_element")
-			.КлассифицируетКак(
-				КодыНативныхОшибок.XMLПовторноеОбъявлениеЭлементаВСхеме(),
-				"ru = 'Глобальный элемент схемы XML объявлен повторно';"
-				+ "en = 'XML schema global element is declared more than once'"
-			)
-	);
-
 КонецПроцедуры
 
 Процедура ДобавитьПравилаZIP(Правила)
@@ -1228,7 +1236,7 @@
 		Новый ПравилоКлассификацииОшибок()
 			.СНативнымТипом("System.ArgumentNullException")
 			.Содержит("Value cannot be null.")
-			.СИдентификатором("argument.invalid_value.xml_schema_writer")
+			.СИдентификатором("argument.invalid_value.dotnet_null_parameter")
 			.КлассифицируетКак(
 				КодыНативныхОшибок.НедопустимоеЗначениеАргумента(),
 				"ru = 'Недопустимое значение аргумента'; en = 'Invalid argument value'"
