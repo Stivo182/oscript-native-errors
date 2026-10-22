@@ -2,7 +2,7 @@
     .Версия("0.1.0")
     .Автор("Dmitry Ivanov")
     .АдресАвтора("https://github.com/Stivo182")
-    .АдресРепозитория("https://github.com/Stivo182/native-errors")
+    .АдресРепозитория("https://github.com/Stivo182/oscript-native-errors")
     .Описание("Набор правил классификации встроенных ошибок OneScript")
     .ВерсияСреды("2.0.0")
     .ВключитьФайл("src")
