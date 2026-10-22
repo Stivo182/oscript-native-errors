@@ -388,7 +388,7 @@
 			.СИдентификатором("json.reader_not_open")
 			.КлассифицируетКак(
 				КодыНативныхОшибок.JSONЧтениеНеОткрыто(),
-				"ru = 'Недопустимое состояние объекта JSON'; en = 'Invalid JSON object state'"
+				"ru = 'Источник данных JSON не открыт'; en = 'JSON data source is not open'"
 			)
 	);
 	Правила.Добавить(
@@ -397,7 +397,7 @@
 			.СИдентификатором("json.writer_not_open")
 			.КлассифицируетКак(
 				КодыНативныхОшибок.JSONЗаписьНеОткрыта(),
-				"ru = 'Недопустимое состояние объекта JSON'; en = 'Invalid JSON object state'"
+				"ru = 'Приемник данных JSON не открыт'; en = 'JSON data target is not open'"
 			)
 	);
 	Правила.Добавить(
@@ -406,7 +406,7 @@
 			.СИдентификатором("json.current_value_unavailable")
 			.КлассифицируетКак(
 				КодыНативныхОшибок.JSONТекущееЗначениеНедоступно(),
-				"ru = 'Недопустимое состояние объекта JSON'; en = 'Invalid JSON object state'"
+				"ru = 'Текущее значение JSON недоступно'; en = 'Current JSON value is unavailable'"
 			)
 	);
 	Правила.Добавить(
@@ -685,7 +685,7 @@
 			.СИдентификатором("xml.system_id_missing")
 			.КлассифицируетКак(
 				КодыНативныхОшибок.XMLСистемныйИдентификаторНеЗадан(),
-				"ru = 'Системный идентификатор XML-документа не задан'; en = 'XML document system ID is missing'"
+				"ru = 'Не задан системный идентификатор типа документа'; en = 'DOCTYPE system identifier is missing'"
 			)
 	);
 	Правила.Добавить(
@@ -700,10 +700,10 @@
 	Правила.Добавить(
 		Новый ПравилоКлассификацииОшибок()
 			.СНативнымТипом("System.Xml.Xsl.XslLoadException")
-			.СИдентификатором("xml.invalid_syntax.xsl_load_exception")
+			.СИдентификатором("xsl.invalid_stylesheet.load")
 			.КлассифицируетКак(
-				КодыНативныхОшибок.XMLНекорректныйСинтаксис(),
-				СообщениеСинтаксиса
+				КодыНативныхОшибок.XSLНекорректнаяТаблицаСтилей(),
+				"ru = 'Некорректная таблица стилей XSL'; en = 'Invalid XSL stylesheet'"
 			)
 	);
 	Правила.Добавить(
@@ -1208,7 +1208,7 @@
 			.СНативнымТипом("System.FormatException")
 			.Содержит("The input string '")
 			.ОканчиваетсяНа("' was not in a correct format.")
-			.СИдентификатором("argument.invalid_value.timezone_gmt_number")
+			.СИдентификатором("argument.invalid_value.format")
 			.КлассифицируетКак(
 				КодыНативныхОшибок.НедопустимоеЗначениеАргумента(),
 				"ru = 'Недопустимое значение аргумента'; en = 'Invalid argument value'"
@@ -1280,8 +1280,8 @@
 			.Содержит("Index must be within the bounds of the List.")
 			.СИдентификатором("argument.invalid_value.list_index_bounds")
 			.КлассифицируетКак(
-				КодыНативныхОшибок.НедопустимоеЗначениеАргумента(),
-				"ru = 'Недопустимое значение аргумента'; en = 'Invalid argument value'"
+				КодыНативныхОшибок.ИндексКоллекцииВнеДиапазона(),
+				"ru = 'Индекс коллекции вне диапазона'; en = 'Collection index is out of range'"
 			)
 	);
 	Правила.Добавить(
@@ -1290,8 +1290,8 @@
 			.Содержит("Index was out of range. Must be non-negative and less than the size of the collection.")
 			.СИдентификатором("argument.invalid_value.collection_index_bounds")
 			.КлассифицируетКак(
-				КодыНативныхОшибок.НедопустимоеЗначениеАргумента(),
-				"ru = 'Недопустимое значение аргумента'; en = 'Invalid argument value'"
+				КодыНативныхОшибок.ИндексКоллекцииВнеДиапазона(),
+				"ru = 'Индекс коллекции вне диапазона'; en = 'Collection index is out of range'"
 			)
 	);
 	Правила.Добавить(
