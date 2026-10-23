@@ -1,0 +1,236 @@
+name: Анализ исходников OneScript
+
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: onescript-source-analysis
+  cancel-in-progress: false
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+    outputs:
+      release_id: ${{ steps.release.outputs.id }}
+      release_tag: ${{ steps.release.outputs.tag }}
+      release_url: ${{ steps.release.outputs.url }}
+      candidate_count: ${{ steps.candidates.outputs.count }}
+      has_candidates: ${{ steps.candidates.outputs.exists }}
+    steps:
+      - name: Получить native-errors
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Выбрать последний выпуск OneScript
+        id: release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          release="$(gh api --paginate 'repos/EvilBeaver/OneScript/releases?per_page=100' | jq -s 'add | map(select(.draft | not) | select(.published_at != null)) | max_by(.published_at)')"
+          test "$release" != "null"
+          {
+            echo "id=$(jq -r '.id' <<<"$release")"
+            echo "tag=$(jq -r '.tag_name' <<<"$release")"
+            echo "url=$(jq -r '.html_url' <<<"$release")"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Проверить метку ранее созданного запроса на слияние
+        if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+        id: reported
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: ${{ steps.release.outputs.id }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          marker="<!-- native-errors:onescript-release:${RELEASE_ID} -->"
+          reported="$(gh api --paginate "repos/${GITHUB_REPOSITORY}/pulls?state=all&per_page=100" | jq -s --arg marker "$marker" 'add | any(.[]; ((.body // "") | contains($marker)))')"
+          echo "exists=${reported}" >> "$GITHUB_OUTPUT"
+
+      - name: Проверить метку чистого выпуска
+        if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+        id: processed
+        uses: actions/cache/restore@v4
+        with:
+          path: .onescript-source-analysis/clean-release
+          key: onescript-source-analysis-v1-${{ steps.release.outputs.id }}
+          lookup-only: true
+
+      - name: Установить .NET
+        if: steps.reported.outputs.exists != 'true' && steps.processed.outputs.cache-hit != 'true'
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Установить OneScript
+        if: steps.reported.outputs.exists != 'true' && steps.processed.outputs.cache-hit != 'true'
+        uses: otymko/setup-onescript@v1.5.1
+        with:
+          version: "2.1.0"
+
+      - name: Установить зависимости probes
+        if: steps.reported.outputs.exists != 'true' && steps.processed.outputs.cache-hit != 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          opm install opm
+          opm install -l --dev
+
+      - name: Получить исходники выбранного выпуска OneScript
+        if: steps.reported.outputs.exists != 'true' && steps.processed.outputs.cache-hit != 'true'
+        uses: actions/checkout@v6
+        with:
+          repository: EvilBeaver/OneScript
+          ref: ${{ steps.release.outputs.tag }}
+          path: onescript
+          persist-credentials: false
+
+      - name: Сформировать статические отчеты
+        if: steps.reported.outputs.exists != 'true' && steps.processed.outputs.cache-hit != 'true'
+        id: refresh
+        shell: bash
+        run: oscript ./probes/probes.os data refresh-source --engine-root "$GITHUB_WORKSPACE/onescript"
+
+      - name: Получить очередь нерассмотренных сигнатур
+        if: steps.reported.outputs.exists != 'true' && steps.processed.outputs.cache-hit != 'true'
+        id: candidates
+        shell: bash
+        run: |
+          set -euo pipefail
+          limit="$(jq '.CandidateCount + .UnknownThrowCount' probes/data/source-error-report.json)"
+          oscript ./probes/probes.os review source --limit "$limit" > source-candidates.json
+          count="$(jq 'length' source-candidates.json)"
+          {
+            echo "count=${count}"
+            echo "exists=$([[ "$count" -gt 0 ]] && echo true || echo false)"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Добавить сводку
+        if: always() && steps.reported.outputs.exists != 'true' && steps.processed.outputs.cache-hit != 'true' && steps.refresh.outcome == 'success'
+        shell: bash
+        run: |
+          {
+            echo "## OneScript ${{ steps.release.outputs.tag }}"
+            if [ -f source-candidates.json ]; then
+              echo
+              echo "Нерассмотренных сигнатур: ${{ steps.candidates.outputs.count }}"
+              echo
+              echo '```json'
+              jq '.[0:10]' source-candidates.json
+              echo '```'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Сохранить отчеты
+        if: always() && steps.reported.outputs.exists != 'true' && steps.processed.outputs.cache-hit != 'true' && steps.refresh.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: onescript-source-analysis-${{ steps.release.outputs.id }}
+          if-no-files-found: warn
+          path: |
+            probes/data/source-error-report.json
+            probes/data/external-call-boundaries.json
+            source-candidates.json
+
+      - name: Запомнить чистый выпуск
+        if: steps.candidates.outputs.exists == 'false' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+        shell: bash
+        run: |
+          mkdir -p .onescript-source-analysis
+          touch .onescript-source-analysis/clean-release
+
+      - name: Сохранить метку чистого выпуска
+        if: steps.candidates.outputs.exists == 'false' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+        uses: actions/cache/save@v4
+        with:
+          path: .onescript-source-analysis/clean-release
+          key: onescript-source-analysis-v1-${{ steps.release.outputs.id }}
+
+  notify:
+    needs: analyze
+    if: needs.analyze.outputs.has_candidates == 'true' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Получить основную ветку native-errors
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Получить отчеты анализа
+        uses: actions/download-artifact@v4
+        with:
+          name: onescript-source-analysis-${{ needs.analyze.outputs.release_id }}
+          path: analysis
+
+      - name: Обновить отчеты
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp analysis/probes/data/source-error-report.json probes/data/
+          cp analysis/probes/data/external-call-boundaries.json probes/data/
+
+      - name: Подготовить запрос на слияние
+        env:
+          RELEASE_ID: ${{ needs.analyze.outputs.release_id }}
+          RELEASE_TAG: ${{ needs.analyze.outputs.release_tag }}
+          RELEASE_URL: ${{ needs.analyze.outputs.release_url }}
+          CANDIDATE_COUNT: ${{ needs.analyze.outputs.candidate_count }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          {
+            echo "<!-- native-errors:onescript-release:${RELEASE_ID} -->"
+            echo "# OneScript ${RELEASE_TAG}: новые кандидаты ошибок"
+            echo
+            echo "Выпуск: ${RELEASE_URL}"
+            echo
+            echo "Запуск сценария: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+            echo
+            echo "Нерассмотренных сигнатур: ${CANDIDATE_COUNT}"
+            echo
+            echo "Первые 10 записей. Полная очередь находится в артефакте запуска."
+            echo
+            echo '```json'
+            jq '.[0:10]' analysis/source-candidates.json
+            echo '```'
+            echo
+            echo 'Локальная проверка:'
+            echo '```text'
+            echo 'oscript .\probes\probes.os review source --limit 20'
+            echo '```'
+          } > onescript-source-analysis-pr.md
+
+      - name: Создать или обновить запрос на слияние
+        uses: peter-evans/create-pull-request@v8.1.1
+        with:
+          token: ${{ github.token }}
+          branch: automation/onescript-source-analysis-${{ needs.analyze.outputs.release_id }}
+          base: ${{ github.event.repository.default_branch }}
+          commit-message: "Обновить отчеты OneScript ${{ needs.analyze.outputs.release_tag }}"
+          author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          title: "OneScript ${{ needs.analyze.outputs.release_tag }}: новые кандидаты ошибок"
+          body-path: onescript-source-analysis-pr.md
+          add-paths: |
+            probes/data/source-error-report.json
+            probes/data/external-call-boundaries.json
+
+  fail-on-candidates:
+    needs: analyze
+    if: needs.analyze.outputs.has_candidates == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Завершить сценарий с ошибкой
+        shell: bash
+        run: exit 1
