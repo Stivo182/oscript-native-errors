@@ -2,7 +2,7 @@
 
 [![Release](https://img.shields.io/github/release/Stivo182/oscript-native-errors.svg)](https://github.com/Stivo182/oscript-native-errors/releases)
 [![Тестирование](https://github.com/Stivo182/oscript-native-errors/actions/workflows/test.yml/badge.svg)](https://github.com/Stivo182/oscript-native-errors/actions/workflows/test.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Used by](https://litrosbadges.ru/package/native-errors.svg)](https://litrosbadges.ru/package/native-errors)
 
 Библиотека OneScript для нормализации исключений встроенных объектов. Она
 содержит каталог нативных кодов и правил, а классификацию выполняет через
