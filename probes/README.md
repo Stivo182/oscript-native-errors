@@ -118,3 +118,12 @@ oscript .\probes\probes.os data refresh-runtime --engine-root C:\src\OneScript -
 
 Команда `review external --remove-not-applicable-orphans` удаляет только осиротевшие записи со статусом
 `NotApplicable`. Все остальные решения сохраняются.
+
+## Исследование запросов Kestrel
+
+Постоянные тесты используют `ВебСервер`, `TCPСоединение` и
+`tests/fixtures/kestrel/appsettings.json`:
+
+```text
+oneunit execute -f tests/ТестыКлассификатораОшибокВебСервера.os
+```
